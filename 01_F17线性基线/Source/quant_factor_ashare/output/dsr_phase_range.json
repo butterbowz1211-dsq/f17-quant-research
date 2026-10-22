@@ -1,0 +1,116 @@
+{
+  "per_phase": [
+    {
+      "phase": 0,
+      "sharpe": 1.7196,
+      "PSR": 0.9917,
+      "DSR_family": 0.9719,
+      "DSR_pooled": 0.9625,
+      "MaxDD": -0.1346
+    },
+    {
+      "phase": 2,
+      "sharpe": 1.5994,
+      "PSR": 0.9858,
+      "DSR_family": 0.9567,
+      "DSR_pooled": 0.9437,
+      "MaxDD": -0.1318
+    },
+    {
+      "phase": 4,
+      "sharpe": 1.5449,
+      "PSR": 0.9826,
+      "DSR_family": 0.9489,
+      "DSR_pooled": 0.9342,
+      "MaxDD": -0.1302
+    },
+    {
+      "phase": 6,
+      "sharpe": 1.6053,
+      "PSR": 0.986,
+      "DSR_family": 0.9573,
+      "DSR_pooled": 0.9444,
+      "MaxDD": -0.1399
+    },
+    {
+      "phase": 8,
+      "sharpe": 1.6718,
+      "PSR": 0.9892,
+      "DSR_family": 0.9654,
+      "DSR_pooled": 0.9545,
+      "MaxDD": -0.1263
+    },
+    {
+      "phase": 10,
+      "sharpe": 1.5901,
+      "PSR": 0.9841,
+      "DSR_family": 0.9532,
+      "DSR_pooled": 0.9396,
+      "MaxDD": -0.1167
+    },
+    {
+      "phase": 12,
+      "sharpe": 1.4345,
+      "PSR": 0.9749,
+      "DSR_family": 0.931,
+      "DSR_pooled": 0.9125,
+      "MaxDD": -0.1227
+    },
+    {
+      "phase": 14,
+      "sharpe": 1.6115,
+      "PSR": 0.9865,
+      "DSR_family": 0.9584,
+      "DSR_pooled": 0.9457,
+      "MaxDD": -0.1334
+    },
+    {
+      "phase": 16,
+      "sharpe": 1.6996,
+      "PSR": 0.9894,
+      "DSR_family": 0.9664,
+      "DSR_pooled": 0.9559,
+      "MaxDD": -0.1187
+    },
+    {
+      "phase": 18,
+      "sharpe": 1.495,
+      "PSR": 0.9801,
+      "DSR_family": 0.9426,
+      "DSR_pooled": 0.9263,
+      "MaxDD": -0.1257
+    },
+    {
+      "phase": 20,
+      "sharpe": 1.5445,
+      "PSR": 0.9853,
+      "DSR_family": 0.9541,
+      "DSR_pooled": 0.94,
+      "MaxDD": -0.1336
+    }
+  ],
+  "N_family": 114,
+  "var_family": 0.0184,
+  "summary": {
+    "sharpe": {
+      "median": 1.5994,
+      "min": 1.4345,
+      "pct_gt_095": 1.0
+    },
+    "PSR": {
+      "median": 0.9858,
+      "min": 0.9749,
+      "pct_gt_095": 1.0
+    },
+    "DSR_family": {
+      "median": 0.9567,
+      "min": 0.931,
+      "pct_gt_095": 0.727
+    },
+    "DSR_pooled": {
+      "median": 0.9437,
+      "min": 0.9125,
+      "pct_gt_095": 0.273
+    }
+  }
+}

@@ -1,0 +1,8 @@
+F17研究发布版
+项目作者：Gilmour Jia
+
+本版由研究归档制作，已清理本机用户名、个人绝对路径、私有对话摘录及文档元数据。源码中的环境位置替换为workspace/review_workspace、workspace/source_workspace和workspace/user_home等中性路径，移机运行前需配置数据位置。
+source_manifest.csv与markdown_source_index.csv使用匿名来源标识；SHA256对应本次脱敏后发布文件。历史实验内部保存的源代码哈希属于当时快照，不能与已脱敏源码直接比较。release_manifest.csv是本次实际发布内容的完整校验清单。
+四类模型及两条机器学习路线保持原有关系；论文与CONTRIBUTIONS.md说明研究贡献、方法来源、AI辅助和证据边界。不同股票池、期间、毛净收益、日频与周期端点结果分别报告。
+完整行情、大型训练数组和运行环境不在本包中。依赖清单见omitted_dependencies.csv。公开源码保留历史实现，未因本次脱敏而重新训练或修正实验结论。
+运行 python 00_说明与核验/verify_archived_daily_metrics.py 可只用Python标准库复算73组保存的日收益指标。其余原脚本仍需依赖与数据配置。

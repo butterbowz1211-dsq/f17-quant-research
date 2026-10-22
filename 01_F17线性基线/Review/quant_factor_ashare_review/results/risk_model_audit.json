@@ -1,0 +1,175 @@
+{
+  "note": "CH4-like proxy only; source float-cap, financial vintages, forward-return missingness and SMB4 simplification remain",
+  "factor_months": 200,
+  "calendar_month_end_fraction": 0.665,
+  "comparisons": {
+    "legacy_phase0/full": {
+      "original_calendar_join_raw_y": {
+        "n": 128,
+        "alpha_monthly": 0.007044472702457427,
+        "alpha_annual_arithmetic": 0.08453367242948912,
+        "t_alpha": 5.655457548251798,
+        "betas": {
+          "MKT": 0.9233652214208055,
+          "SMB": 0.7109208942643837,
+          "VMG": 0.09822145987941672,
+          "PMO": 0.02234102359017498
+        },
+        "r_squared": 0.9189650791226421
+      },
+      "period_join_excess_y": {
+        "n": 192,
+        "alpha_monthly": 0.005608444270164845,
+        "alpha_annual_arithmetic": 0.06730133124197814,
+        "t_alpha": 5.200865008060223,
+        "betas": {
+          "MKT": 0.9278798292995493,
+          "SMB": 0.7024943632014673,
+          "VMG": 0.08666112960033806,
+          "PMO": 0.011091153872569204
+        },
+        "r_squared": 0.9330600558652401
+      }
+    },
+    "legacy_phase0/reused_validation": {
+      "original_calendar_join_raw_y": {
+        "n": 30,
+        "alpha_monthly": 0.010129475763236273,
+        "alpha_annual_arithmetic": 0.12155370915883529,
+        "t_alpha": 3.916312414367593,
+        "betas": {
+          "MKT": 0.878083041231963,
+          "SMB": 0.8188594601669491,
+          "VMG": 0.04241400583228758,
+          "PMO": 0.020265520711377105
+        },
+        "r_squared": 0.9128662247033399
+      },
+      "period_join_excess_y": {
+        "n": 44,
+        "alpha_monthly": 0.007291039617464881,
+        "alpha_annual_arithmetic": 0.08749247540957858,
+        "t_alpha": 3.1443837152969034,
+        "betas": {
+          "MKT": 0.8960628070957858,
+          "SMB": 0.7768235330844218,
+          "VMG": 0.05401649322371482,
+          "PMO": 0.015162805927589007
+        },
+        "r_squared": 0.9126624540419769
+      }
+    },
+    "monthly_buffer_p00/full": {
+      "original_calendar_join_raw_y": {
+        "n": 128,
+        "alpha_monthly": 0.006266804220149959,
+        "alpha_annual_arithmetic": 0.07520165064179951,
+        "t_alpha": 4.463301937265086,
+        "betas": {
+          "MKT": 0.7538171055530956,
+          "SMB": 0.5163203441029557,
+          "VMG": 0.12964623866875952,
+          "PMO": -0.053008739483686396
+        },
+        "r_squared": 0.8601781383874036
+      },
+      "period_join_excess_y": {
+        "n": 192,
+        "alpha_monthly": 0.004764573672869611,
+        "alpha_annual_arithmetic": 0.05717488407443533,
+        "t_alpha": 3.388201156096933,
+        "betas": {
+          "MKT": 0.7755371742023169,
+          "SMB": 0.5276733847753947,
+          "VMG": 0.09353233700632702,
+          "PMO": -0.03921213092141107
+        },
+        "r_squared": 0.8841930407620228
+      }
+    },
+    "monthly_buffer_p00/reused_validation": {
+      "original_calendar_join_raw_y": {
+        "n": 30,
+        "alpha_monthly": 0.006439128836497028,
+        "alpha_annual_arithmetic": 0.07726954603796433,
+        "t_alpha": 2.7958348652026435,
+        "betas": {
+          "MKT": 0.5059381353875605,
+          "SMB": 0.3880145009166277,
+          "VMG": 0.024242615839466936,
+          "PMO": 0.08384253644631096
+        },
+        "r_squared": 0.839365585196056
+      },
+      "period_join_excess_y": {
+        "n": 44,
+        "alpha_monthly": 0.004603621325046159,
+        "alpha_annual_arithmetic": 0.055243455900553906,
+        "t_alpha": 2.0864669359424437,
+        "betas": {
+          "MKT": 0.5509582341826003,
+          "SMB": 0.39103867277411486,
+          "VMG": 0.046988899055616595,
+          "PMO": 0.033928486941183
+        },
+        "r_squared": 0.8435668126568119
+      }
+    },
+    "monthly_buffer_weightband_p00/full": {
+      "original_calendar_join_raw_y": {
+        "n": 128,
+        "alpha_monthly": 0.006001320860709221,
+        "alpha_annual_arithmetic": 0.07201585032851066,
+        "t_alpha": 4.323976674889239,
+        "betas": {
+          "MKT": 0.7397375000505888,
+          "SMB": 0.5062823850339823,
+          "VMG": 0.12323435832843815,
+          "PMO": -0.05566610521311188
+        },
+        "r_squared": 0.8536786292983474
+      },
+      "period_join_excess_y": {
+        "n": 192,
+        "alpha_monthly": 0.004562611179193399,
+        "alpha_annual_arithmetic": 0.05475133415032079,
+        "t_alpha": 3.2696502057462142,
+        "betas": {
+          "MKT": 0.7612505595262696,
+          "SMB": 0.5133742122149823,
+          "VMG": 0.08765696690514707,
+          "PMO": -0.03722936441609337
+        },
+        "r_squared": 0.8808881905842272
+      }
+    },
+    "monthly_buffer_weightband_p00/reused_validation": {
+      "original_calendar_join_raw_y": {
+        "n": 30,
+        "alpha_monthly": 0.006254314522519292,
+        "alpha_annual_arithmetic": 0.0750517742702315,
+        "t_alpha": 2.629475495367325,
+        "betas": {
+          "MKT": 0.4928712311396028,
+          "SMB": 0.3705669291236291,
+          "VMG": 0.02023796951809581,
+          "PMO": 0.08146286724472945
+        },
+        "r_squared": 0.8295469013334659
+      },
+      "period_join_excess_y": {
+        "n": 44,
+        "alpha_monthly": 0.004455611057649604,
+        "alpha_annual_arithmetic": 0.053467332691795245,
+        "t_alpha": 2.0902454397251486,
+        "betas": {
+          "MKT": 0.5412664704546273,
+          "SMB": 0.3783965606364991,
+          "VMG": 0.04291091497817082,
+          "PMO": 0.034235378599015265
+        },
+        "r_squared": 0.8389589694972054
+      }
+    }
+  }
+}

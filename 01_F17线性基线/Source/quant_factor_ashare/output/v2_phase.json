@@ -1,0 +1,165 @@
+{
+  "phase": {
+    "F17|原版 n50 等权 cap5% 无缓冲": {
+      "IS_sharpe_mean": 0.5746,
+      "IS_sharpe_sd": 0.0495,
+      "OOS_sharpe_mean": 0.8114,
+      "OOS_sharpe_sd": 0.065,
+      "OOS_sharpe_min": 0.6787,
+      "OOS_sharpe_max": 0.8926,
+      "OOS_cagr_mean": 0.1711,
+      "OOS_maxdd_mean": -0.265,
+      "OOS_maxdd_worst": -0.2889,
+      "OOS_calmar_mean": 0.646,
+      "OOS_turnover_mean": 17.0428,
+      "n_phases": 11
+    },
+    "F17|改进B n50 等权 cap3% 缓冲0.6": {
+      "IS_sharpe_mean": 0.5877,
+      "IS_sharpe_sd": 0.0501,
+      "OOS_sharpe_mean": 0.8603,
+      "OOS_sharpe_sd": 0.0764,
+      "OOS_sharpe_min": 0.7537,
+      "OOS_sharpe_max": 1.0171,
+      "OOS_cagr_mean": 0.1798,
+      "OOS_maxdd_mean": -0.2636,
+      "OOS_maxdd_worst": -0.2917,
+      "OOS_calmar_mean": 0.682,
+      "OOS_turnover_mean": 14.3816,
+      "n_phases": 11
+    },
+    "F17|池200 得分加权 n50 cap3% 无缓冲": {
+      "IS_sharpe_mean": 0.5381,
+      "IS_sharpe_sd": 0.0488,
+      "OOS_sharpe_mean": 0.8555,
+      "OOS_sharpe_sd": 0.0706,
+      "OOS_sharpe_min": 0.7308,
+      "OOS_sharpe_max": 0.9531,
+      "OOS_cagr_mean": 0.1745,
+      "OOS_maxdd_mean": -0.2418,
+      "OOS_maxdd_worst": -0.264,
+      "OOS_calmar_mean": 0.721,
+      "OOS_turnover_mean": 16.8213,
+      "n_phases": 11
+    },
+    "F17|池200 得分加权 n50 cap3% 缓冲0.3": {
+      "IS_sharpe_mean": 0.5381,
+      "IS_sharpe_sd": 0.0488,
+      "OOS_sharpe_mean": 0.8555,
+      "OOS_sharpe_sd": 0.0706,
+      "OOS_sharpe_min": 0.7308,
+      "OOS_sharpe_max": 0.9531,
+      "OOS_cagr_mean": 0.1745,
+      "OOS_maxdd_mean": -0.2418,
+      "OOS_maxdd_worst": -0.264,
+      "OOS_calmar_mean": 0.721,
+      "OOS_turnover_mean": 16.8213,
+      "n_phases": 11
+    },
+    "F17|池200 得分加权 n50 cap3% 缓冲0.6": {
+      "IS_sharpe_mean": 0.5381,
+      "IS_sharpe_sd": 0.0488,
+      "OOS_sharpe_mean": 0.8556,
+      "OOS_sharpe_sd": 0.0705,
+      "OOS_sharpe_min": 0.7313,
+      "OOS_sharpe_max": 0.9531,
+      "OOS_cagr_mean": 0.1745,
+      "OOS_maxdd_mean": -0.2418,
+      "OOS_maxdd_worst": -0.264,
+      "OOS_calmar_mean": 0.721,
+      "OOS_turnover_mean": 16.8211,
+      "n_phases": 11
+    },
+    "F17|池400 得分加权 n50 cap3% 缓冲0.6": {
+      "IS_sharpe_mean": 0.5458,
+      "IS_sharpe_sd": 0.0486,
+      "OOS_sharpe_mean": 0.8548,
+      "OOS_sharpe_sd": 0.0708,
+      "OOS_sharpe_min": 0.7243,
+      "OOS_sharpe_max": 0.9374,
+      "OOS_cagr_mean": 0.1749,
+      "OOS_maxdd_mean": -0.2438,
+      "OOS_maxdd_worst": -0.2653,
+      "OOS_calmar_mean": 0.717,
+      "OOS_turnover_mean": 16.8027,
+      "n_phases": 11
+    }
+  },
+  "ic": {
+    "ABN_TURN": {
+      "n_periods": 185,
+      "IS": {
+        "IC": 0.05841,
+        "t": 9.0,
+        "ICIR": 0.752,
+        "pos_rate": 0.755
+      },
+      "OOS": {
+        "IC": 0.06972,
+        "t": 6.5,
+        "ICIR": 1.003,
+        "pos_rate": 0.81
+      }
+    },
+    "VTURN": {
+      "n_periods": 192,
+      "IS": {
+        "IC": 0.04301,
+        "t": 10.28,
+        "ICIR": 0.839,
+        "pos_rate": 0.76
+      },
+      "OOS": {
+        "IC": 0.04532,
+        "t": 7.3,
+        "ICIR": 1.126,
+        "pos_rate": 0.881
+      }
+    },
+    "TURN": {
+      "n_periods": 192,
+      "IS": {
+        "IC": 0.09183,
+        "t": 11.42,
+        "ICIR": 0.932,
+        "pos_rate": 0.813
+      },
+      "OOS": {
+        "IC": 0.09865,
+        "t": 5.89,
+        "ICIR": 0.909,
+        "pos_rate": 0.857
+      }
+    },
+    "TURN_SHOCK": {
+      "n_periods": 191,
+      "IS": {
+        "IC": 0.04213,
+        "t": 7.78,
+        "ICIR": 0.638,
+        "pos_rate": 0.725
+      },
+      "OOS": {
+        "IC": 0.05067,
+        "t": 5.52,
+        "ICIR": 0.852,
+        "pos_rate": 0.786
+      }
+    },
+    "REV_1W": {
+      "n_periods": 192,
+      "IS": {
+        "IC": 0.04641,
+        "t": 6.17,
+        "ICIR": 0.504,
+        "pos_rate": 0.687
+      },
+      "OOS": {
+        "IC": 0.01866,
+        "t": 1.55,
+        "ICIR": 0.239,
+        "pos_rate": 0.571
+      }
+    }
+  }
+}

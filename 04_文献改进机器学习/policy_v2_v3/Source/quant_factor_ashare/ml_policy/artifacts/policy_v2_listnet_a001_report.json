@@ -1,0 +1,362 @@
+{
+  "tag": "policy_v2_listnet_a001",
+  "config": {
+    "folds": [
+      0
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "epochs": 40,
+    "patience": 12,
+    "lr": 0.005,
+    "batch": 16,
+    "rebalance": 21,
+    "first_year": 2013,
+    "hidden": [
+      32,
+      16
+    ],
+    "temperature": 1.0,
+    "temp_end": 0.1,
+    "top_k": 0,
+    "top_g": 0,
+    "listnet_weight": 0.001,
+    "listnet_temp": 0.5,
+    "top_names": [
+      0,
+      500
+    ],
+    "cap": 0.03,
+    "l2": 0.001,
+    "dropout": 0.1,
+    "cost_bp": 25.0,
+    "partial": 1.0,
+    "band": 0.0,
+    "price_guard": 0.0,
+    "capital": 10000000.0,
+    "strict": false,
+    "cpu": false,
+    "score_ic": true,
+    "save_models": true,
+    "tag": "policy_v2_listnet_a001",
+    "out": null
+  },
+  "dataset": {
+    "n_dates": 4065,
+    "n_symbols": 5221,
+    "n_input": 70,
+    "n_params": 2818,
+    "warmup": 260
+  },
+  "folds": [
+    {
+      "index": 0,
+      "label": "fold0: train 2013-01-01..2018-12-31 | valid 2019-01-01..2020-12-31 | test 2021-01-04..2021-12-31 | untouched",
+      "top_names": 0,
+      "contamination": "untouched",
+      "n_train": 70,
+      "n_valid": 24,
+      "test_window": [
+        "2021-01-04",
+        "2021-12-31"
+      ],
+      "valid_window": [
+        "1970-01-01",
+        "1970-01-01"
+      ],
+      "seeds": [
+        {
+          "n_params": 2818,
+          "best_epoch": 37,
+          "best_valid_score": 0.8512601445387344,
+          "best_valid_ir": 1.0810240042524168,
+          "best_valid": {
+            "n_decisions": 24,
+            "mean_log_growth": 0.0664649402606301,
+            "ann_return_approx": 1.2201600394486203,
+            "ann_vol_approx": 0.7377997898197717,
+            "info_ratio": 1.0810240042524168,
+            "mean_breadth": 7.375,
+            "mean_cash": 0.08401967196492759,
+            "mean_top_weight": 0.7484286276735345
+          },
+          "seconds": 10.274683952331543
+        },
+        {
+          "n_params": 2818,
+          "best_epoch": 29,
+          "best_valid_score": 1.1300450117133591,
+          "best_valid_ir": 1.2089169849817427,
+          "best_valid": {
+            "n_decisions": 24,
+            "mean_log_growth": 0.0767167705441049,
+            "ann_return_approx": 1.5107995457160235,
+            "ann_vol_approx": 0.7615090680053286,
+            "info_ratio": 1.2089169849817427,
+            "mean_breadth": 11.666666666666666,
+            "mean_cash": 0.2583365910723832,
+            "mean_top_weight": 0.5358271142516363
+          },
+          "seconds": 9.547926425933838
+        },
+        {
+          "n_params": 2818,
+          "best_epoch": 34,
+          "best_valid_score": 0.9853159353421639,
+          "best_valid_ir": 1.0177107652947868,
+          "best_valid": {
+            "n_decisions": 24,
+            "mean_log_growth": 0.07362611157198747,
+            "ann_return_approx": 1.4193849110240384,
+            "ann_vol_approx": 0.8681379513637492,
+            "info_ratio": 1.0177107652947868,
+            "mean_breadth": 80.79166666666667,
+            "mean_cash": 2.492139435900773e-05,
+            "mean_top_weight": 0.8031024920443693
+          },
+          "seconds": 9.44269347190857
+        }
+      ],
+      "test_warmup": {
+        "n_days": 1458,
+        "total_return": 0.6924202175634611,
+        "cagr": 0.09520456480311035,
+        "vol": 0.25118636585644855,
+        "sharpe": 0.3790196353950165,
+        "max_drawdown": -0.4960213425095015,
+        "sortino": 0.45719179241135643,
+        "hit_rate": 0.5603566529492455,
+        "skew": -0.7352630883247444,
+        "worst_day": -0.08146207805066086,
+        "best_day": 0.07680313132913152,
+        "mean_holdings": 820.9108367626886,
+        "mean_cash_weight": 0.1026856721128273,
+        "annual_two_way_turnover": 6.773726399483697,
+        "total_cost_bp_of_capital": 1558.6268687699808,
+        "blocked_buy_days": 0,
+        "blocked_sell_days": 1456,
+        "stale_weight_mean": 0.014179689023514722,
+        "stale_weight_max": 0.05780552929099225,
+        "final_nav": 16924202.175634645
+      },
+      "validation": {
+        "n_days": 487,
+        "total_return": 0.5553167974092688,
+        "cagr": 0.256774612147491,
+        "vol": 0.25540462664971947,
+        "sharpe": 1.0053639807381032,
+        "max_drawdown": -0.2022270160247337,
+        "sortino": 1.3043479207973403,
+        "hit_rate": 0.5359342915811088,
+        "skew": -0.6969235365412423,
+        "worst_day": -0.082587542318588,
+        "best_day": 0.04894153361309872,
+        "mean_holdings": 846.7556468172485,
+        "mean_cash_weight": 0.060703510575461465,
+        "annual_two_way_turnover": 6.757374648497532,
+        "total_cost_bp_of_capital": 375.0049442050771,
+        "blocked_buy_days": 0,
+        "blocked_sell_days": 487,
+        "stale_weight_mean": 0.0010743776450290417,
+        "stale_weight_max": 0.0015127670363510302,
+        "final_nav": 26322495.926514987
+      },
+      "test": {
+        "n_days": 243,
+        "total_return": 0.15277352508370345,
+        "cagr": 0.15885956147552927,
+        "vol": 0.18996269029252882,
+        "sharpe": 0.8362671703106385,
+        "max_drawdown": -0.11075956357358063,
+        "sortino": 1.2319971567963013,
+        "hit_rate": 0.5761316872427984,
+        "skew": -0.339057428825321,
+        "worst_day": -0.033907020724261216,
+        "best_day": 0.03763338045941156,
+        "mean_holdings": 864.9835390946502,
+        "mean_cash_weight": 0.05876405750920176,
+        "annual_two_way_turnover": 7.17169081276916,
+        "total_cost_bp_of_capital": 150.75207296506235,
+        "blocked_buy_days": 0,
+        "blocked_sell_days": 243,
+        "stale_weight_mean": 0.0,
+        "stale_weight_max": 0.0,
+        "final_nav": 30343876.418210085
+      },
+      "target_diagnostics": {
+        "n_decisions": 12,
+        "mean_names_above_1e4": 926.6666666666666,
+        "median_names_above_1e4": 924.0,
+        "p10_names_above_1e4": 913.2,
+        "max_names_above_1e4": 950.0,
+        "mean_deployed": 1.0000000280326378,
+        "mean_cash": -2.8032637766628454e-08,
+        "max_single_weight": 0.02999999999873473
+      },
+      "score_ic_test": {
+        "n_dates": 12,
+        "ic_mean": 0.03535110001176769,
+        "ic_std": 0.2153410408650809,
+        "ic_ir": 0.16416331912278836,
+        "ic_t": 0.5686784189196258,
+        "hit": 0.5833333333333334
+      }
+    },
+    {
+      "index": 0,
+      "label": "fold0: train 2013-01-01..2018-12-31 | valid 2019-01-01..2020-12-31 | test 2021-01-04..2021-12-31 | untouched",
+      "top_names": 500,
+      "contamination": "untouched",
+      "n_train": 70,
+      "n_valid": 24,
+      "test_window": [
+        "2021-01-04",
+        "2021-12-31"
+      ],
+      "valid_window": [
+        "1970-01-01",
+        "1970-01-01"
+      ],
+      "seeds": [
+        {
+          "n_params": 2818,
+          "best_epoch": 37,
+          "best_valid_score": 0.8512601445387344,
+          "best_valid_ir": 1.0810240042524168,
+          "best_valid": {
+            "n_decisions": 24,
+            "mean_log_growth": 0.0664649402606301,
+            "ann_return_approx": 1.2201600394486203,
+            "ann_vol_approx": 0.7377997898197717,
+            "info_ratio": 1.0810240042524168,
+            "mean_breadth": 7.375,
+            "mean_cash": 0.08401967196492759,
+            "mean_top_weight": 0.7484286276735345
+          },
+          "seconds": 10.274683952331543
+        },
+        {
+          "n_params": 2818,
+          "best_epoch": 29,
+          "best_valid_score": 1.1300450117133591,
+          "best_valid_ir": 1.2089169849817427,
+          "best_valid": {
+            "n_decisions": 24,
+            "mean_log_growth": 0.0767167705441049,
+            "ann_return_approx": 1.5107995457160235,
+            "ann_vol_approx": 0.7615090680053286,
+            "info_ratio": 1.2089169849817427,
+            "mean_breadth": 11.666666666666666,
+            "mean_cash": 0.2583365910723832,
+            "mean_top_weight": 0.5358271142516363
+          },
+          "seconds": 9.547926425933838
+        },
+        {
+          "n_params": 2818,
+          "best_epoch": 34,
+          "best_valid_score": 0.9853159353421639,
+          "best_valid_ir": 1.0177107652947868,
+          "best_valid": {
+            "n_decisions": 24,
+            "mean_log_growth": 0.07362611157198747,
+            "ann_return_approx": 1.4193849110240384,
+            "ann_vol_approx": 0.8681379513637492,
+            "info_ratio": 1.0177107652947868,
+            "mean_breadth": 80.79166666666667,
+            "mean_cash": 2.492139435900773e-05,
+            "mean_top_weight": 0.8031024920443693
+          },
+          "seconds": 9.44269347190857
+        }
+      ],
+      "test_warmup": {
+        "n_days": 1458,
+        "total_return": 1.327458947245312,
+        "cagr": 0.15720874993114364,
+        "vol": 0.25417365687852095,
+        "sharpe": 0.6185092187042797,
+        "max_drawdown": -0.41843329591813205,
+        "sortino": 0.7297943921637507,
+        "hit_rate": 0.5548696844993142,
+        "skew": -0.892771785057257,
+        "worst_day": -0.08609110114393947,
+        "best_day": 0.05859915004041216,
+        "mean_holdings": 438.7654320987654,
+        "mean_cash_weight": 0.1701389158581104,
+        "annual_two_way_turnover": 14.008406853844978,
+        "total_cost_bp_of_capital": 3503.6590470599226,
+        "blocked_buy_days": 0,
+        "blocked_sell_days": 1456,
+        "stale_weight_mean": 0.011422547841245896,
+        "stale_weight_max": 0.043356612396920374,
+        "final_nav": 23274589.472453106
+      },
+      "validation": {
+        "n_days": 487,
+        "total_return": 0.7047197718870652,
+        "cagr": 0.3178613581599965,
+        "vol": 0.25675438152824714,
+        "sharpe": 1.2379977948887568,
+        "max_drawdown": -0.21886256877520738,
+        "sortino": 1.6343978812882498,
+        "hit_rate": 0.5338809034907598,
+        "skew": -0.7214033013416815,
+        "worst_day": -0.08792638275191134,
+        "best_day": 0.048363036310900664,
+        "mean_holdings": 477.0698151950719,
+        "mean_cash_weight": 0.06004253724591491,
+        "annual_two_way_turnover": 15.10103278631393,
+        "total_cost_bp_of_capital": 721.6598060918417,
+        "blocked_buy_days": 0,
+        "blocked_sell_days": 487,
+        "stale_weight_mean": 0.0016766065594659538,
+        "stale_weight_max": 0.0023265683851516894,
+        "final_nav": 39676652.85624528
+      },
+      "test": {
+        "n_days": 243,
+        "total_return": 0.15905368146350973,
+        "cagr": 0.1654073595163652,
+        "vol": 0.22939501623771366,
+        "sharpe": 0.7210590806600594,
+        "max_drawdown": -0.1348422260994917,
+        "sortino": 1.0574718695980936,
+        "hit_rate": 0.5679012345679012,
+        "skew": -0.19550402763880953,
+        "worst_day": -0.04505730295969523,
+        "best_day": 0.05375950531802487,
+        "mean_holdings": 485.08641975308643,
+        "mean_cash_weight": 0.04816610311082131,
+        "annual_two_way_turnover": 15.502042530097231,
+        "total_cost_bp_of_capital": 287.15964974304427,
+        "blocked_buy_days": 0,
+        "blocked_sell_days": 241,
+        "stale_weight_mean": 0.0,
+        "stale_weight_max": 0.0,
+        "final_nav": 45987370.561180755
+      },
+      "target_diagnostics": {
+        "n_decisions": 12,
+        "mean_names_above_1e4": 500.0,
+        "median_names_above_1e4": 500.0,
+        "p10_names_above_1e4": 500.0,
+        "max_names_above_1e4": 500.0,
+        "mean_deployed": 1.0,
+        "mean_cash": 0.0,
+        "max_single_weight": 0.03
+      },
+      "score_ic_test": {
+        "n_dates": 12,
+        "ic_mean": 0.03535110001176769,
+        "ic_std": 0.2153410408650809,
+        "ic_ir": 0.16416331912278836,
+        "ic_t": 0.5686784189196258,
+        "hit": 0.5833333333333334
+      }
+    }
+  ]
+}

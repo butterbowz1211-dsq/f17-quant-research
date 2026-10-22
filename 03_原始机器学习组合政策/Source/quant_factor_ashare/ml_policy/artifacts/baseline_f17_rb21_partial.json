@@ -1,0 +1,39 @@
+{
+  "config": {
+    "start": "2013-01-01",
+    "end": null,
+    "n": 50,
+    "buffer": 0.6,
+    "cap": 0.03,
+    "rebalance": 21,
+    "partial": 0.5,
+    "band": 0.0025,
+    "capital": 10000000.0,
+    "out": "workspace/source_workspace/quant_factor_ashare/ml_policy/artifacts/baseline_f17_rb21_partial.json",
+    "strict": false
+  },
+  "period": {
+    "start": "2013-01-04",
+    "end": "2026-09-28",
+    "days": 3336
+  },
+  "performance": {
+    "days": 3336,
+    "cagr": 0.06969244051198764,
+    "vol": 0.19462422091798423,
+    "sharpe": 0.44424457334858464,
+    "max_drawdown": -0.5543771408518757,
+    "final_nav": 2.4396777071236917
+  },
+  "annual_two_way_turnover": 0.16038547727680363,
+  "mean_cash_weight": 0.19414883077509298,
+  "mean_holdings": 1438.685551558753,
+  "total_cost": 77502.9136723563,
+  "total_cost_bp_of_capital": 77.5029136723563,
+  "blocked_buy_days": 0,
+  "blocked_sell_days": 3334,
+  "stale_weight_mean": 0.00615392853733284,
+  "stale_weight_max": 0.08419663685009159,
+  "stale_weight_days": 2013,
+  "valuation_mode": "diagnostic_carry_last_price"
+}

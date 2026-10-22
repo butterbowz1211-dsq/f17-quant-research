@@ -1,0 +1,7 @@
+[
+  {
+    "epoch": 1,
+    "train_huber": 0.9937459116567204,
+    "validation_huber": null
+  }
+]

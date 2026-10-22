@@ -1,0 +1,269 @@
+{
+  "results": {
+    "等权": {
+      "IS_sharpe_mean": 0.5896,
+      "OOS_sharpe_mean": 0.8588,
+      "OOS_sharpe_sd": 0.0823,
+      "OOS_sharpe_min": 0.7598,
+      "OOS_sharpe_max": 1.0171,
+      "OOS_cagr_mean": 0.1793,
+      "OOS_maxdd_mean": -0.2625,
+      "OOS_calmar_mean": 0.683,
+      "ch4_oos": {
+        "alpha_a_pct": 12.86,
+        "t": 4.29,
+        "r2": 0.913,
+        "beta_MKT": 0.878,
+        "beta_SMB": -0.819
+      },
+      "n_phases": 7
+    },
+    "价差α加权": {
+      "IS_sharpe_mean": 0.6682,
+      "OOS_sharpe_mean": 0.7085,
+      "OOS_sharpe_sd": 0.0389,
+      "OOS_sharpe_min": 0.6439,
+      "OOS_sharpe_max": 0.7719,
+      "OOS_cagr_mean": 0.1782,
+      "OOS_maxdd_mean": -0.3466,
+      "OOS_calmar_mean": 0.514,
+      "ch4_oos": {
+        "alpha_a_pct": 10.17,
+        "t": 2.77,
+        "r2": 0.934,
+        "beta_MKT": 0.974,
+        "beta_SMB": -1.055
+      },
+      "n_phases": 7
+    },
+    "多头腿α加权": {
+      "IS_sharpe_mean": 0.6331,
+      "OOS_sharpe_mean": 0.8669,
+      "OOS_sharpe_sd": 0.0672,
+      "OOS_sharpe_min": 0.802,
+      "OOS_sharpe_max": 0.9873,
+      "OOS_cagr_mean": 0.1891,
+      "OOS_maxdd_mean": -0.2765,
+      "OOS_calmar_mean": 0.684,
+      "ch4_oos": {
+        "alpha_a_pct": 12.01,
+        "t": 3.98,
+        "r2": 0.91,
+        "beta_MKT": 0.885,
+        "beta_SMB": -0.854
+      },
+      "n_phases": 7
+    }
+  },
+  "weights_spread": {
+    "TURN": 0.1398,
+    "MAX5": 0.1009,
+    "INTRADAY": 0.1213,
+    "ILLIQ": 0.0888,
+    "COMMOVE": 0.086,
+    "TURN_SHOCK": 0.0629,
+    "REV_1W": 0.0635,
+    "ISKEW": 0.0377,
+    "IVOL": 0.0874,
+    "OVERNIGHT": 0.0514,
+    "LEAD_LAG": 0.0269,
+    "CO_SKEW": 0.0386,
+    "BETA": 0.0205,
+    "REV_LT": 0.0371,
+    "SIZE": 0.0335,
+    "HIGH52": 0.0,
+    "RES_MOM": 0.0039
+  },
+  "weights_longonly": {
+    "TURN": 0.0775,
+    "MAX5": 0.0662,
+    "INTRADAY": 0.0706,
+    "ILLIQ": 0.0678,
+    "COMMOVE": 0.0659,
+    "TURN_SHOCK": 0.0568,
+    "REV_1W": 0.055,
+    "ISKEW": 0.0602,
+    "IVOL": 0.0668,
+    "OVERNIGHT": 0.0533,
+    "LEAD_LAG": 0.052,
+    "CO_SKEW": 0.0549,
+    "BETA": 0.045,
+    "REV_LT": 0.0676,
+    "SIZE": 0.0567,
+    "HIGH52": 0.045,
+    "RES_MOM": 0.0384
+  },
+  "detail": {
+    "TURN": {
+      "spread": [
+        1.3636,
+        7.12
+      ],
+      "long": [
+        1.3454,
+        2.46
+      ]
+    },
+    "MAX5": {
+      "spread": [
+        0.9844,
+        5.27
+      ],
+      "long": [
+        1.1496,
+        2.1
+      ]
+    },
+    "INTRADAY": {
+      "spread": [
+        1.1828,
+        5.89
+      ],
+      "long": [
+        1.2255,
+        2.11
+      ]
+    },
+    "ILLIQ": {
+      "spread": [
+        0.866,
+        5.48
+      ],
+      "long": [
+        1.1777,
+        2.3
+      ]
+    },
+    "COMMOVE": {
+      "spread": [
+        0.8385,
+        6.13
+      ],
+      "long": [
+        1.1446,
+        2.05
+      ]
+    },
+    "TURN_SHOCK": {
+      "spread": [
+        0.6138,
+        4.1
+      ],
+      "long": [
+        0.986,
+        1.73
+      ]
+    },
+    "REV_1W": {
+      "spread": [
+        0.619,
+        3.49
+      ],
+      "long": [
+        0.9556,
+        1.6
+      ]
+    },
+    "ISKEW": {
+      "spread": [
+        0.3673,
+        3.83
+      ],
+      "long": [
+        1.0457,
+        2.02
+      ]
+    },
+    "IVOL": {
+      "spread": [
+        0.852,
+        3.98
+      ],
+      "long": [
+        1.1603,
+        2.21
+      ]
+    },
+    "OVERNIGHT": {
+      "spread": [
+        0.501,
+        6.22
+      ],
+      "long": [
+        0.9245,
+        1.69
+      ]
+    },
+    "LEAD_LAG": {
+      "spread": [
+        0.2622,
+        2.44
+      ],
+      "long": [
+        0.9033,
+        1.69
+      ]
+    },
+    "CO_SKEW": {
+      "spread": [
+        0.3762,
+        2.45
+      ],
+      "long": [
+        0.9536,
+        1.74
+      ]
+    },
+    "BETA": {
+      "spread": [
+        0.1996,
+        1.16
+      ],
+      "long": [
+        0.7817,
+        1.55
+      ]
+    },
+    "REV_LT": {
+      "spread": [
+        0.3622,
+        2.13
+      ],
+      "long": [
+        1.174,
+        2.02
+      ]
+    },
+    "SIZE": {
+      "spread": [
+        0.3269,
+        1.13
+      ],
+      "long": [
+        0.9851,
+        1.64
+      ]
+    },
+    "HIGH52": {
+      "spread": [
+        -0.0391,
+        -0.16
+      ],
+      "long": [
+        0.7812,
+        1.49
+      ]
+    },
+    "RES_MOM": {
+      "spread": [
+        0.0383,
+        0.23
+      ],
+      "long": [
+        0.667,
+        1.17
+      ]
+    }
+  },
+  "is_selected": "价差α加权"
+}

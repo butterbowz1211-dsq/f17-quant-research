@@ -1,0 +1,22 @@
+[
+  {
+    "epoch": 1,
+    "train_huber": 0.9894677540930814,
+    "validation_huber": null
+  },
+  {
+    "epoch": 2,
+    "train_huber": 0.9866983740070471,
+    "validation_huber": null
+  },
+  {
+    "epoch": 3,
+    "train_huber": 0.9853185569383213,
+    "validation_huber": null
+  },
+  {
+    "epoch": 4,
+    "train_huber": 0.984303550372672,
+    "validation_huber": null
+  }
+]

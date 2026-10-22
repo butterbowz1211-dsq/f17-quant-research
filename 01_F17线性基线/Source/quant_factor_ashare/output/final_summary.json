@@ -1,0 +1,242 @@
+{
+  "config": {
+    "n": 50,
+    "weighting": "equal",
+    "buffer": 0.6,
+    "rebalance_days": 21,
+    "max_weight": 0.03
+  },
+  "n_trials_accounted": 80,
+  "phase_scan": {
+    "推荐": {
+      "oos_sharpe_mean": 0.8603,
+      "oos_sharpe_sd": 0.0764,
+      "oos_sharpe_min": 0.7537,
+      "oos_sharpe_max": 1.0171,
+      "oos_cagr_mean": 0.1798,
+      "oos_maxdd_mean": -0.2636,
+      "oos_calmar_mean": 0.682,
+      "turnover_mean": 15.1157
+    },
+    "原版": {
+      "oos_sharpe_mean": 0.8114,
+      "oos_sharpe_sd": 0.065,
+      "oos_sharpe_min": 0.6787,
+      "oos_sharpe_max": 0.8926,
+      "oos_cagr_mean": 0.1711,
+      "oos_maxdd_mean": -0.265,
+      "oos_calmar_mean": 0.646,
+      "turnover_mean": 17.7119
+    }
+  },
+  "periods": {
+    "多头|样本内 2010-2022": {
+      "CAGR": 0.1387,
+      "AnnVol": 0.2327,
+      "Sharpe": 0.5898,
+      "MaxDD": -0.485,
+      "Calmar": 0.286,
+      "Sortino": 0.67,
+      "WinRate": 0.5673,
+      "Skew": -1.043,
+      "n_days": 3159
+    },
+    "多空|样本内 2010-2022": {
+      "CAGR": 0.1706,
+      "AnnVol": 0.082,
+      "Sharpe": 1.7189,
+      "MaxDD": -0.1006,
+      "Calmar": 1.695,
+      "Sortino": 2.913,
+      "WinRate": 0.5448,
+      "Skew": 0.32,
+      "n_days": 3159
+    },
+    "多头|样本外 2023-2026": {
+      "CAGR": 0.2153,
+      "AnnVol": 0.1898,
+      "Sharpe": 1.0171,
+      "MaxDD": -0.2543,
+      "Calmar": 0.847,
+      "Sortino": 1.265,
+      "WinRate": 0.574,
+      "Skew": -0.016,
+      "n_days": 906
+    },
+    "多空|样本外 2023-2026": {
+      "CAGR": 0.1483,
+      "AnnVol": 0.1159,
+      "Sharpe": 1.0784,
+      "MaxDD": -0.1225,
+      "Calmar": 1.21,
+      "Sortino": 1.757,
+      "WinRate": 0.5287,
+      "Skew": 0.122,
+      "n_days": 906
+    },
+    "多头|全样本 2010-2026": {
+      "CAGR": 0.1553,
+      "AnnVol": 0.2238,
+      "Sharpe": 0.6687,
+      "MaxDD": -0.485,
+      "Calmar": 0.32,
+      "Sortino": 0.767,
+      "WinRate": 0.5688,
+      "Skew": -0.916,
+      "n_days": 4065
+    },
+    "多空|全样本 2010-2026": {
+      "CAGR": 0.1655,
+      "AnnVol": 0.0906,
+      "Sharpe": 1.5156,
+      "MaxDD": -0.1225,
+      "Calmar": 1.351,
+      "Sortino": 2.468,
+      "WinRate": 0.5412,
+      "Skew": 0.236,
+      "n_days": 4065
+    },
+    "基准|样本内 2010-2022": {
+      "CAGR": 0.0356,
+      "AnnVol": 0.2734,
+      "Sharpe": 0.1926,
+      "MaxDD": -0.6683,
+      "Calmar": 0.053,
+      "Sortino": 0.231,
+      "WinRate": 0.5464,
+      "Skew": -0.724,
+      "n_days": 3159
+    },
+    "基准|样本外 2023-2026": {
+      "CAGR": 0.0776,
+      "AnnVol": 0.2372,
+      "Sharpe": 0.3501,
+      "MaxDD": -0.3292,
+      "Calmar": 0.236,
+      "Sortino": 0.448,
+      "WinRate": 0.5386,
+      "Skew": -0.437,
+      "n_days": 906
+    }
+  },
+  "ch4": {
+    "多头|全样本": {
+      "alpha_m_pct": 0.7044,
+      "alpha_a_pct": 8.789,
+      "t": 5.77,
+      "betas": {
+        "MKT": 0.923,
+        "SMB": -0.711,
+        "VMG": 0.098,
+        "PMO": 0.022
+      },
+      "r2": 0.919,
+      "n_months": 128
+    },
+    "多头|样本内": {
+      "alpha_m_pct": 0.5706,
+      "alpha_a_pct": 7.066,
+      "t": 4.29,
+      "betas": {
+        "MKT": 0.94,
+        "SMB": -0.694,
+        "VMG": 0.132,
+        "PMO": 0.046
+      },
+      "r2": 0.9239,
+      "n_months": 98
+    },
+    "多头|样本外": {
+      "alpha_m_pct": 1.0129,
+      "alpha_a_pct": 12.856,
+      "t": 4.29,
+      "betas": {
+        "MKT": 0.878,
+        "SMB": -0.819,
+        "VMG": 0.042,
+        "PMO": 0.02
+      },
+      "r2": 0.9129,
+      "n_months": 30
+    },
+    "多空|全样本": {
+      "alpha_m_pct": 0.9439,
+      "alpha_a_pct": 11.934,
+      "t": 5.19,
+      "betas": {
+        "MKT": -0.071,
+        "SMB": -0.054,
+        "VMG": 0.419,
+        "PMO": 0.142
+      },
+      "r2": 0.6353,
+      "n_months": 128
+    },
+    "多空|样本内": {
+      "alpha_m_pct": 1.0362,
+      "alpha_a_pct": 13.168,
+      "t": 5.63,
+      "betas": {
+        "MKT": -0.059,
+        "SMB": 0.009,
+        "VMG": 0.321,
+        "PMO": 0.15
+      },
+      "r2": 0.4103,
+      "n_months": 98
+    },
+    "多空|样本外": {
+      "alpha_m_pct": 1.0369,
+      "alpha_a_pct": 13.178,
+      "t": 4.05,
+      "betas": {
+        "MKT": -0.11,
+        "SMB": -0.141,
+        "VMG": 0.511,
+        "PMO": 0.039
+      },
+      "r2": 0.8847,
+      "n_months": 30
+    }
+  },
+  "trial_distribution": {
+    "n": 114,
+    "mean": 0.9295,
+    "sd": 0.1321,
+    "var": 0.0174
+  },
+  "significance": {
+    "多头|样本外": {
+      "Sharpe": 1.0171,
+      "NW_t": 1.942,
+      "PSR": 0.972,
+      "DSR": 0.904,
+      "SR0_ann": 0.3237,
+      "n_obs": 906
+    },
+    "多头|全样本": {
+      "Sharpe": 0.6687,
+      "NW_t": 2.825,
+      "PSR": 0.9957,
+      "DSR": 0.9132,
+      "SR0_ann": 0.3237,
+      "n_obs": 4065
+    },
+    "多空|样本外": {
+      "Sharpe": 1.0784,
+      "NW_t": 2.292,
+      "PSR": 0.9798,
+      "DSR": 0.9247,
+      "SR0_ann": 0.3237,
+      "n_obs": 906
+    },
+    "多空|全样本": {
+      "Sharpe": 1.5156,
+      "NW_t": 6.726,
+      "PSR": 1.0,
+      "DSR": 1.0,
+      "SR0_ann": 0.3237,
+      "n_obs": 4065
+    }
+  }
+}

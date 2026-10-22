@@ -1,0 +1,18 @@
+{
+  "author": "Gilmour Jia",
+  "scan_status": "passed",
+  "findings": [],
+  "scanned_payloads": 4046,
+  "python_syntax_passed": 142,
+  "json_validated": 270,
+  "checks": [
+    "common credential formats",
+    "email addresses",
+    "credential-bearing URLs",
+    "private local account paths",
+    "nested archive members",
+    "document author metadata",
+    "published source hashes"
+  ],
+  "limitations": "Pattern-based inspection; not a proof that all possible secret formats are absent. Historical algorithm limitations remain documented."
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "epoch": 1,
+    "train_huber": 0.9923866931559477,
+    "validation_huber": null
+  },
+  {
+    "epoch": 2,
+    "train_huber": 0.989953331819664,
+    "validation_huber": null
+  },
+  {
+    "epoch": 3,
+    "train_huber": 0.9895880539996695,
+    "validation_huber": null
+  },
+  {
+    "epoch": 4,
+    "train_huber": 0.9876427720686813,
+    "validation_huber": null
+  },
+  {
+    "epoch": 5,
+    "train_huber": 0.9882738910533636,
+    "validation_huber": null
+  },
+  {
+    "epoch": 6,
+    "train_huber": 0.9875812569748057,
+    "validation_huber": null
+  }
+]

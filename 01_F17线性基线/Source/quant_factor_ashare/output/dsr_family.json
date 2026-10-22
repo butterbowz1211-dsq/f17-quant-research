@@ -1,0 +1,117 @@
+{
+  "results": {
+    "多头|近24个月": {
+      "sharpe": 1.7196,
+      "n_days": 504,
+      "PSR": 0.9917,
+      "DSR_N1": NaN,
+      "DSR_family": 0.9719,
+      "family_N": 114,
+      "family_SR0": 0.3495,
+      "DSR_pooled": 0.9624,
+      "pooled_N": 126,
+      "pooled_SR0": 0.4424
+    },
+    "多头|近12个月": {
+      "sharpe": 0.9051,
+      "n_days": 252,
+      "PSR": 0.8111,
+      "DSR_N1": NaN,
+      "DSR_family": 0.7063,
+      "family_N": 114,
+      "family_SR0": 0.3495,
+      "DSR_pooled": 0.6744,
+      "pooled_N": 126,
+      "pooled_SR0": 0.4424
+    },
+    "多头|近36个月": {
+      "sharpe": 0.8952,
+      "n_days": 756,
+      "PSR": 0.9383,
+      "DSR_N1": NaN,
+      "DSR_family": 0.8266,
+      "family_N": 114,
+      "family_SR0": 0.3495,
+      "DSR_pooled": 0.7826,
+      "pooled_N": 126,
+      "pooled_SR0": 0.4424
+    },
+    "多头|样本外3.6年": {
+      "sharpe": 1.0171,
+      "n_days": 906,
+      "PSR": 0.972,
+      "DSR_N1": NaN,
+      "DSR_family": 0.8955,
+      "family_N": 114,
+      "family_SR0": 0.3495,
+      "DSR_pooled": 0.8603,
+      "pooled_N": 126,
+      "pooled_SR0": 0.4424
+    },
+    "多空|近24个月": {
+      "sharpe": 0.1044,
+      "n_days": 504,
+      "PSR": 0.5587,
+      "DSR_N1": NaN,
+      "DSR_family": 0.3819,
+      "family_N": 12,
+      "family_SR0": 0.3185,
+      "DSR_pooled": 0.3171,
+      "pooled_N": 126,
+      "pooled_SR0": 0.4424
+    },
+    "多空|近12个月": {
+      "sharpe": 1.0172,
+      "n_days": 252,
+      "PSR": 0.8475,
+      "DSR_N1": NaN,
+      "DSR_family": 0.76,
+      "family_N": 12,
+      "family_SR0": 0.3185,
+      "DSR_pooled": 0.7195,
+      "pooled_N": 126,
+      "pooled_SR0": 0.4424
+    },
+    "多空|近36个月": {
+      "sharpe": 0.8411,
+      "n_days": 756,
+      "PSR": 0.9278,
+      "DSR_N1": NaN,
+      "DSR_family": 0.8186,
+      "family_N": 12,
+      "family_SR0": 0.3185,
+      "DSR_pooled": 0.7564,
+      "pooled_N": 126,
+      "pooled_SR0": 0.4424
+    },
+    "多空|样本外3.6年": {
+      "sharpe": 1.0784,
+      "n_days": 906,
+      "PSR": 0.9798,
+      "DSR_N1": NaN,
+      "DSR_family": 0.9261,
+      "family_N": 12,
+      "family_SR0": 0.3185,
+      "DSR_pooled": 0.8872,
+      "pooled_N": 126,
+      "pooled_SR0": 0.4424
+    }
+  },
+  "trial_stats": {
+    "long": {
+      "n": 114,
+      "sd": 0.1356,
+      "var": 0.0184
+    },
+    "ls": {
+      "n": 12,
+      "sd": 0.1913,
+      "var": 0.0366
+    },
+    "pooled": {
+      "n": 126,
+      "sd": 0.1694,
+      "var": 0.0287
+    }
+  }
+}

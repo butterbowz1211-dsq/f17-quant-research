@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite this research archive if you use its implementation or empirical analysis."
+title: "F17 Quantitative Research: Linear Baselines, Regularization and Machine Learning"
+type: software
+authors:
+  - family-names: "Jia"
+    given-names: "Gilmour"
+abstract: "A-share multifactor model comparisons with archived experimental results and documented evaluation limitations."
+version: "1.0.0"
+date-released: "2026-10-22"

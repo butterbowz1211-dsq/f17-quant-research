@@ -1,0 +1,31 @@
+文献改进机器学习模型与独立F17收益预测分支说明
+整理日期 2026年10月21日
+
+一 目录分为两个独立分支
+policy_v2_v3保留第三类直接学习组合权重框架的文献启发修改；F17收益预测NN则是Review nn_v2，输入F17特征预测个股收益，再用组合规则读出。两分支的特征、股票池、训练目标及执行口径不同，不能把它们拼成同口径的单一提升阶梯。
+
+二 policy v2 v3的改动
+保存按时间顺序训练、ListNet辅助排序损失、top-G softmax（G=500）、固定温度0.6、验证RankIC选停、相对目标权重不交易带等实验。选择这些方法，是为了缓解原模型训练时序、全市场评分与组合头部目标、换手成本之间的错配；未完成专门识别实验的机制解释仍是假说。
+共享核心源码和qlp包与第三类保持同源快照，参数以各artifacts/policy_*_report.json为准。所有主要负结果、cost0对照、shuffle对照及2023–2026探索性holdout保留。2021固定T0.6的v3 top500读出CAGR16.15%、标准Sharpe1.1473、MDD−7.34%、Calmar2.1991。另一个2023–2026探索性holdout使用固定的原始p1配方（训练2013–2020，验证2021–2022），并非逐项检验v2/v3改动；该p1 softmax读出的CAGR约−0.12%，同池市值权重约7.41%。因此，p1的早期优势未获该保留期支持，而v2/v3的改进仍缺少跨期确认，不能把p1的结果当作所有文献改进版本的测试结果。原标签时序与边界问题仍需一并披露。
+
+三 F17收益预测NN v1 v4 v5
+v4输入为17因子及17个缺失标记，网络34→32→16→1、1665参数；v5增加EP/BP/SP/DIV及其缺失标记，变为42维、1921参数。网络预测收益，不直接输出股票权重。日期等权Huber损失delta=1，训练标签按训练截面等权绝对收益中位数缩放；AdamW、Dropout0.1、最多100轮、patience10，三seed预测在收益单位平均。
+超参网格lr为0.0003/0.001、weight_decay为0.0001/0.001/0.01；两版最终lr0.001、weight_decay0.01，Ridge对照alpha=1。v4/v5各完成45次NN与8次Ridge拟合。首折2013–2018训练、2019–2020选参、2021预测，随后冻结lr/wd并滚动选择epoch；2021并不是直接用测试结果选超参。历史仍被反复研究，所以只能称探索性历史外推。
+
+四 组合评价与结果
+v4/v5按每形成日top50等权读出21交易日收益标签，原脚本按252/22年化。58个形成日为2021-01-22至2025-12-31，最后标签实际延伸至2026-02-03；不能写成2026数据完全未使用。F17 baseline为相同预测文件中的17个clean因子均值，另有Ridge线性预测对照。
+原毛收益读数：v4 NN CAGR23.071%、Sharpe1.0137、周期端点MDD−24.436%；F17 20.173%、1.0844、−19.354%；v5 NN 22.827%、1.0351、−23.378%。v5 IC降低，但部分周期风险指标略好，不能声称所有指标均退化。估值overlay在2023–2025使IC提高却降低top50收益，应保留为负结果。
+原毛收益58期、扣名称换手成本57期，不应把两者差额全部解释为费用。本次核验CSV同时列同57期毛净对照和年化敏感性。周期端点回撤无法看到期内日最大回撤，也不能与policy日账本直接比较。
+v1独立日频毛收益读数2021–2026共1391日，F17 Sharpe1.1432，NN softmax0.8409，二者组合映射不同。此历史分支单独保存，不能混用v4/v5的周期统计。
+
+五 最重要的评价限制
+v4/v5 quick_readout先剔除未来标签缺失再选top50。实际58期中，F17有48期替换合计119个名额；v4 NN有7期替换8个。该处理影响模型比较，结果只能称“条件于未来标签可得性的周期诊断”，不能证明无偏可执行投资业绩。数据和执行严格验收仍为execution_accepted=false。估值因子的负结果也不能外推为价值因子普遍无效。
+
+六 文件与运行入口
+policy分支保留run_policy.py、qlp、tools、tests、所有关键报告/日账本与可找到的checkpoint/分数；carry.npy和prep_arrays等大数组未附。
+NN分支保留train/model/metrics/factors/portfolio/execution等源码、原规格和费用配置、v1/v4/v5已保存预测、小型模型checkpoint、训练台账、选型记录，以及research_ext的v5/overlay/估值分析源码与结果。为prepare_research导入而保留的supplement、baidu_supplement、data_mcp/normalize是数据加载依赖源码，未附账户凭据，也未执行下载。
+v4原入口：python train.py --package derived/research_training_v4 --out 新输出目录 --device cuda --mode research_with_limitations --last-year 2025
+v5使用research_ext/build_v5_package.py和train_v5.py；overlay使用research_ext/overlay_value_v4.py。源代码仍含本机路径，重训样本没有打包，完整重训需补齐omitted_dependencies.csv中的数据，且应先处理已知时序和评价问题。本次没有训练模型或重跑历史回测。
+
+七 阅读顺序
+先读本说明和本次ml_evidence.md，再看各run manifest、experiment ledger、winner与逐期CSV，最后看原报告及代码。文件来源、SHA256和字节数见source_manifest.csv。原始报告作为研究历史保留；与本次代码核验冲突时，以本次核查说明和可追踪原始收益序列为准。方法复杂度增加提供表达能力，但当前证据未证明稳定风险调整收益提升。

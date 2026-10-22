@@ -1,0 +1,80 @@
+{
+  "tag": "beq",
+  "kind": "equal",
+  "config": {
+    "kind": "equal",
+    "n": 50,
+    "buffer": 0.6,
+    "folds": [
+      0,
+      1
+    ],
+    "rebalance": 21,
+    "first_year": 2013,
+    "cap": 0.03,
+    "partial": 1.0,
+    "band": 0.0,
+    "capital": 10000000.0,
+    "strict": false,
+    "tag": "beq",
+    "out": null
+  },
+  "folds": [
+    {
+      "index": 0,
+      "label": "fold0: train 2013-01-01..2018-12-31 | valid 2019-01-01..2020-12-31 | test 2021-01-04..2021-12-31 | untouched",
+      "contamination": "untouched",
+      "n_decisions": 105,
+      "test": {
+        "n_days": 243,
+        "total_return": 0.13738690211391913,
+        "cagr": 0.14282280366372668,
+        "vol": 0.18085885284212777,
+        "sharpe": 0.7896920798695828,
+        "max_drawdown": -0.10211501165409564,
+        "sortino": 1.1533100934758758,
+        "hit_rate": 0.551440329218107,
+        "skew": -0.3340988035453039,
+        "worst_day": -0.03336091501067706,
+        "best_day": 0.03449653948760911,
+        "mean_holdings": 864.8065843621399,
+        "mean_cash_weight": 0.05163697124259848,
+        "annual_two_way_turnover": 4.802058112077684,
+        "total_cost_bp_of_capital": 113.43769336223305,
+        "blocked_buy_days": 0,
+        "blocked_sell_days": 243,
+        "stale_weight_mean": 0.0,
+        "stale_weight_max": 0.0
+      },
+      "seconds": 36.3
+    },
+    {
+      "index": 1,
+      "label": "fold1: train 2013-01-01..2019-12-31 | valid 2020-01-01..2021-12-31 | test 2022-01-04..2022-12-30 | untouched",
+      "contamination": "untouched",
+      "n_decisions": 116,
+      "test": {
+        "n_days": 242,
+        "total_return": -0.24628256252945924,
+        "cagr": -0.2550372858348837,
+        "vol": 0.22863169348250945,
+        "sharpe": -1.1154940155066224,
+        "max_drawdown": -0.30111920019551885,
+        "sortino": -1.4758377598125767,
+        "hit_rate": 0.5165289256198347,
+        "skew": -0.5454915470818523,
+        "worst_day": -0.06450913240909972,
+        "best_day": 0.044145107633440483,
+        "mean_holdings": 874.9090909090909,
+        "mean_cash_weight": 0.059696484187062714,
+        "annual_two_way_turnover": 4.584491298676947,
+        "total_cost_bp_of_capital": 85.48365905048085,
+        "blocked_buy_days": 0,
+        "blocked_sell_days": 242,
+        "stale_weight_mean": 0.0,
+        "stale_weight_max": 0.0
+      },
+      "seconds": 40.1
+    }
+  ]
+}

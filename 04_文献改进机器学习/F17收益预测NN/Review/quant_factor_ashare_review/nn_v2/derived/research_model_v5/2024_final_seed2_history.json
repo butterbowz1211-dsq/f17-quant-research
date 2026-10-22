@@ -1,0 +1,62 @@
+[
+  {
+    "epoch": 1,
+    "train_huber": 0.9935577107003881,
+    "validation_huber": null
+  },
+  {
+    "epoch": 2,
+    "train_huber": 0.9882403877926395,
+    "validation_huber": null
+  },
+  {
+    "epoch": 3,
+    "train_huber": 0.9873400246612846,
+    "validation_huber": null
+  },
+  {
+    "epoch": 4,
+    "train_huber": 0.9868762440093456,
+    "validation_huber": null
+  },
+  {
+    "epoch": 5,
+    "train_huber": 0.986317237724455,
+    "validation_huber": null
+  },
+  {
+    "epoch": 6,
+    "train_huber": 0.9863458477428201,
+    "validation_huber": null
+  },
+  {
+    "epoch": 7,
+    "train_huber": 0.9856800998124308,
+    "validation_huber": null
+  },
+  {
+    "epoch": 8,
+    "train_huber": 0.9851975515478448,
+    "validation_huber": null
+  },
+  {
+    "epoch": 9,
+    "train_huber": 0.9867369353039199,
+    "validation_huber": null
+  },
+  {
+    "epoch": 10,
+    "train_huber": 0.9844164114901814,
+    "validation_huber": null
+  },
+  {
+    "epoch": 11,
+    "train_huber": 0.9859462250592725,
+    "validation_huber": null
+  },
+  {
+    "epoch": 12,
+    "train_huber": 0.9852334420272698,
+    "validation_huber": null
+  }
+]

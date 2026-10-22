@@ -1,0 +1,16 @@
+# Core research dependencies. Unpinned because historical experiments used
+# multiple environments; this file is not a validated reproducible lockfile.
+# Python 3.12 was observed in the original project environment.
+numpy
+pandas
+scipy
+scikit-learn
+torch
+pyarrow
+matplotlib
+statsmodels
+
+# Observed bundled verification environment: numpy 2.3.5, pandas 3.0.1.
+# Original policy README records pandas 3.0.6 and torch 2.11+cu128;
+# CUDA availability depends on the local GPU/driver and was not revalidated here.
+# Provider download clients/account credentials are intentionally not supplied.

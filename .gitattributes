@@ -1,0 +1,7 @@
+# Preserve archived bytes so the published SHA256 manifest stays valid.
+* -text
+*.docx binary
+*.pt binary
+*.npz binary
+*.pkl binary
+*.png binary

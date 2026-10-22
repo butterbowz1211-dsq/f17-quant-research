@@ -1,0 +1,47 @@
+{
+  "version": "nn_v2.3_research",
+  "training_contract": {
+    "version": "nn_v2.3_research",
+    "authorization": "Research training authorized with documented limitations.",
+    "execution_accepted": false,
+    "preprocessing": {
+      "all_missing_factor": "reject_date_and_report; retain_all_17_features",
+      "industry": "existing_static_industry_proxy; identical_for_NN_and_research_F17"
+    },
+    "universe": {
+      "security_master": "local_listing_dates; conservative_first_quote_fallback",
+      "unknown_st": "exclude; Baidu daily name preferred; backward month-end proxy otherwise",
+      "formation_limit_up": "exclude_using_Baidu_daily_limit_up_else_board_rate_preclose_proxy",
+      "float_cap": "raw_close_times_Baidu_float_shares_else_Sina_shares_else_turnover_proxy"
+    },
+    "label": {
+      "corporate_actions": "vendor_adjusted_price_research_proxy; NOT_verified_cash_share_settlement",
+      "interior_missing": "allowed_only_with_observed_BaoStock_suspension",
+      "missing": "NaN_with_reason; no_imputation; no_return_outlier_deletion",
+      "price_precision": "raw_OHLC_scaled_by_same_day_vendor_adjusted_close_over_raw_close"
+    },
+    "calendar": {
+      "source": "union_of_existing_market_trading_dates; BaoStock_overlap_audited"
+    },
+    "acceptance": {
+      "training_authorized_with_limitations": true,
+      "data_execution_pass_required": true,
+      "future_confirmation": "not_started; execution_and_data_acceptance_still_required"
+    }
+  },
+  "preparation_code": "9d914d8c1f418f31270a97ffb06fd5b97e0f708750d8b799ece6522ae8c6535f",
+  "files": {
+    "authorization.json": "a9045b88fb8fd287e9c86a5a5b4cd4a43b9fd6bb6b72371e3c5db4fac608a0b0",
+    "calendar.csv": "0cfb1423844f27c4f517d490bbe021fb598f42f7fdc88914e31017a498fcacc1",
+    "factors_clean.parquet": "e8de3a942b7f8bc84754727c5fbef47a86fd831e71ce5f602b0694b466075eb2",
+    "factors_raw.parquet": "314c2e62025cdc3ddb46489c2b5f4cd2bfb398a049ef484c881548594eae8857",
+    "label_coverage.csv": "ca859fee92c5627d8e2060af8d42a4014d4dc9e9b92d36ad8d5af4b3ea6d287c",
+    "quality_report.json": "644768aa7e1fc17ad0a78286d594363b01c143161917029b5db0e223fe6fd4d2",
+    "research_acceptance.json": "d3997fc12bf83c0b80b7dd29afcebc8b6bc293a8c27dda9c002fa858985b8129",
+    "sample_quality.parquet": "50a2a40e6d08d8d5a9b59a8159d9042a473384f53b65592d1077c26dd81857bb",
+    "samples.npz": "dd28ed9d0f4518e9513c39c11dafa5be976e71bd63254ed1a62ac22fe5b58ea3",
+    "security_coverage.csv": "f89af7d64f35c7e8bcd1fddba374f3c8ccc96b5f656362366bc0aa554fc4fd73",
+    "skipped_dates.json": "27fedef177fc3d29a474687afd3bcd553df04e393a181026f3550a4504f55e7c",
+    "source_manifest.json": "5fd2a47489edd81405ab4a10f10e0720e786316628e38eba0b078e23e43955c6"
+  }
+}

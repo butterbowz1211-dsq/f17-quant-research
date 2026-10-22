@@ -1,0 +1,158 @@
+{
+  "F13": {
+    "IS": {
+      "name": "F13 n=150|IS",
+      "CAGR": 0.1482,
+      "AnnVol": 0.2515,
+      "Sharpe": 0.5973,
+      "MaxDD": -0.5141,
+      "Calmar": 0.288,
+      "WinRate": 0.5651,
+      "n": 3159,
+      "gross_Sharpe": 0.6976,
+      "ann_turnover": 16.8391
+    },
+    "OOS": {
+      "name": "F13 n=150|OOS",
+      "CAGR": 0.1906,
+      "AnnVol": 0.2267,
+      "Sharpe": 0.7951,
+      "MaxDD": -0.3058,
+      "Calmar": 0.623,
+      "WinRate": 0.5519,
+      "n": 906,
+      "gross_Sharpe": 0.9083,
+      "ann_turnover": 17.0198
+    }
+  },
+  "F13C": {
+    "IS": {
+      "name": "F13C n=150|IS",
+      "CAGR": 0.1468,
+      "AnnVol": 0.2485,
+      "Sharpe": 0.5965,
+      "MaxDD": -0.5089,
+      "Calmar": 0.289,
+      "WinRate": 0.5654,
+      "n": 3159,
+      "gross_Sharpe": 0.699,
+      "ann_turnover": 16.9957
+    },
+    "OOS": {
+      "name": "F13C n=150|OOS",
+      "CAGR": 0.1844,
+      "AnnVol": 0.2207,
+      "Sharpe": 0.7872,
+      "MaxDD": -0.3043,
+      "Calmar": 0.606,
+      "WinRate": 0.5618,
+      "n": 906,
+      "gross_Sharpe": 0.9005,
+      "ann_turnover": 16.5804
+    }
+  },
+  "F13CR": {
+    "IS": {
+      "name": "F13CR n=150|IS",
+      "CAGR": 0.139,
+      "AnnVol": 0.2541,
+      "Sharpe": 0.562,
+      "MaxDD": -0.5253,
+      "Calmar": 0.265,
+      "WinRate": 0.566,
+      "n": 3159,
+      "gross_Sharpe": 0.6597,
+      "ann_turnover": 16.5642
+    },
+    "OOS": {
+      "name": "F13CR n=150|OOS",
+      "CAGR": 0.1854,
+      "AnnVol": 0.2314,
+      "Sharpe": 0.7648,
+      "MaxDD": -0.3219,
+      "Calmar": 0.576,
+      "WinRate": 0.5541,
+      "n": 906,
+      "gross_Sharpe": 0.8769,
+      "ann_turnover": 17.2141
+    }
+  },
+  "F8": {
+    "IS": {
+      "name": "F8 n=150|IS",
+      "CAGR": 0.1682,
+      "AnnVol": 0.2604,
+      "Sharpe": 0.6521,
+      "MaxDD": -0.5119,
+      "Calmar": 0.329,
+      "WinRate": 0.5651,
+      "n": 3159,
+      "gross_Sharpe": 0.7659,
+      "ann_turnover": 19.7636
+    },
+    "OOS": {
+      "name": "F8 n=150|OOS",
+      "CAGR": 0.1754,
+      "AnnVol": 0.2502,
+      "Sharpe": 0.692,
+      "MaxDD": -0.3344,
+      "Calmar": 0.525,
+      "WinRate": 0.5519,
+      "n": 906,
+      "gross_Sharpe": 0.8134,
+      "ann_turnover": 20.1494
+    }
+  },
+  "F8C": {
+    "IS": {
+      "name": "F8C n=150|IS",
+      "CAGR": 0.1517,
+      "AnnVol": 0.2552,
+      "Sharpe": 0.6042,
+      "MaxDD": -0.5394,
+      "Calmar": 0.281,
+      "WinRate": 0.56,
+      "n": 3159,
+      "gross_Sharpe": 0.7219,
+      "ann_turnover": 20.0326
+    },
+    "OOS": {
+      "name": "F8C n=150|OOS",
+      "CAGR": 0.1768,
+      "AnnVol": 0.2443,
+      "Sharpe": 0.7075,
+      "MaxDD": -0.3298,
+      "Calmar": 0.536,
+      "WinRate": 0.5596,
+      "n": 906,
+      "gross_Sharpe": 0.831,
+      "ann_turnover": 20.0157
+    }
+  },
+  "F8CR": {
+    "IS": {
+      "name": "F8CR n=150|IS",
+      "CAGR": 0.1667,
+      "AnnVol": 0.2626,
+      "Sharpe": 0.644,
+      "MaxDD": -0.5268,
+      "Calmar": 0.316,
+      "WinRate": 0.5609,
+      "n": 3159,
+      "gross_Sharpe": 0.7527,
+      "ann_turnover": 19.039
+    },
+    "OOS": {
+      "name": "F8CR n=150|OOS",
+      "CAGR": 0.1616,
+      "AnnVol": 0.2543,
+      "Sharpe": 0.638,
+      "MaxDD": -0.3465,
+      "Calmar": 0.466,
+      "WinRate": 0.543,
+      "n": 906,
+      "gross_Sharpe": 0.7568,
+      "ann_turnover": 20.0584
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "scope": "UNVERIFIED_FRICTIONLESS_ADJUSTED_PRICE_PORTFOLIO_DIAGNOSTIC",
+  "files": {
+    "F17_daily_gross.csv": "d469008f8571f89c7b165e4c820ae1d63cae2418baa88d80f9f119bc7f648ed5",
+    "F17_orders.csv": "e6f214944e9359cc8b7819d94eefd708aa94fd8dfb025012785be985d6a5bef5",
+    "F17_valuation_gaps.csv": "3f434ef8d4373d1fb1fe2c6cd42c9a4513a887d04459da73234c1920d08a732f",
+    "NN_equal_daily_gross.csv": "54a95536e32099523b794df3d5383abd48b812f501e05193b6595c59b8c2a191",
+    "NN_equal_orders.csv": "8f44ec21e5211ee4045da273b65573959e704e888dfe1ea85a480405c81a1077",
+    "NN_equal_valuation_gaps.csv": "0d3e3d19496d572e0718adad61507191a6f804fef9b91c590fa32cad361b9ba4",
+    "NN_softmax_daily_gross.csv": "0cd6492f47979fda17eac50ab3f06f6f9fa9e702b198849a960c7e98fc6ad6fe",
+    "NN_softmax_orders.csv": "989a87ac7301fd1fec26ad4e8660dc38a8e61c8b4c7415fafe615404422b916e",
+    "NN_softmax_valuation_gaps.csv": "e2118666ed5498ef24baaa6f7c1baf69614fba9ef9fdbcf963ec8eb90bf514bd",
+    "Ridge_daily_gross.csv": "135d027be42246d6d645c9819e253bcbcb1025c41399c02e68afc46544ff3597",
+    "Ridge_orders.csv": "801087e9f58d79faa299e09b8d2a48380cecd853e26e93155a041db2894d7378",
+    "Ridge_valuation_gaps.csv": "e2104b0edef3e5217072190b7387082636bc7d5ae282b381d334cd52a3c14d5d",
+    "summary.json": "c3d45e787c825bbe6a80a9605873864699437bb9781d02eb0e47f0fcdb659803",
+    "yearly_metrics.csv": "da709c1a5da1f31c9eb159e97a690d969b059415f1f76b8ecc315cfe0b75722e"
+  },
+  "source_script_sha256": "ca42555b98e84fa1cfb6ee3d2d97de7f10910d058079dd186e3c0d0a1a0146b8"
+}

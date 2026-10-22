@@ -1,0 +1,11 @@
+{
+  "lr": 0.001,
+  "weight_decay": 0.01,
+  "seed_epochs_2021": [
+    27,
+    23,
+    11
+  ],
+  "criterion": "mean_validation_Huber",
+  "spec_hash": "ead7f531a09fdaad2812490183e198b4d59c1983f84830ef324f789f9fefecb9"
+}

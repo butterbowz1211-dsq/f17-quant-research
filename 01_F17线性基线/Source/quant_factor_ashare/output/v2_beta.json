@@ -1,0 +1,496 @@
+{
+  "β目标=None pool=200": {
+    "stats": {
+      "IS": {
+        "name": "β目标=None pool=200|IS",
+        "CAGR": 0.1304,
+        "AnnVol": 0.2224,
+        "Sharpe": 0.5737,
+        "MaxDD": -0.4923,
+        "Calmar": 0.265,
+        "WinRate": 0.5378,
+        "n": 3159,
+        "gross_Sharpe": 0.6875,
+        "ann_turnover": 16.8797
+      },
+      "OOS": {
+        "name": "β目标=None pool=200|OOS",
+        "CAGR": 0.1879,
+        "AnnVol": 0.1844,
+        "Sharpe": 0.9174,
+        "MaxDD": -0.227,
+        "Calmar": 0.828,
+        "WinRate": 0.5706,
+        "n": 906,
+        "gross_Sharpe": 1.0539,
+        "ann_turnover": 16.6788
+      }
+    },
+    "beta_IS": {
+      "beta": 0.895,
+      "alpha_ann": 0.0935,
+      "alpha_t": 3.08
+    },
+    "beta_OOS": {
+      "beta": 0.903,
+      "alpha_ann": 0.1032,
+      "alpha_t": 1.87
+    }
+  },
+  "β目标=1.0 pool=200": {
+    "stats": {
+      "IS": {
+        "name": "β目标=1.0 pool=200|IS",
+        "CAGR": 0.1349,
+        "AnnVol": 0.2184,
+        "Sharpe": 0.5983,
+        "MaxDD": -0.4923,
+        "Calmar": 0.274,
+        "WinRate": 0.5375,
+        "n": 3159,
+        "gross_Sharpe": 0.7129,
+        "ann_turnover": 16.6982
+      },
+      "OOS": {
+        "name": "β目标=1.0 pool=200|OOS",
+        "CAGR": 0.1663,
+        "AnnVol": 0.1752,
+        "Sharpe": 0.8517,
+        "MaxDD": -0.227,
+        "Calmar": 0.732,
+        "WinRate": 0.574,
+        "n": 906,
+        "gross_Sharpe": 0.9938,
+        "ann_turnover": 16.4904
+      }
+    },
+    "beta_IS": {
+      "beta": 0.882,
+      "alpha_ann": 0.0973,
+      "alpha_t": 3.29
+    },
+    "beta_OOS": {
+      "beta": 0.855,
+      "alpha_ann": 0.0877,
+      "alpha_t": 1.62
+    }
+  },
+  "β目标=1.0 pool=400": {
+    "stats": {
+      "IS": {
+        "name": "β目标=1.0 pool=400|IS",
+        "CAGR": 0.1404,
+        "AnnVol": 0.2149,
+        "Sharpe": 0.6268,
+        "MaxDD": -0.4893,
+        "Calmar": 0.287,
+        "WinRate": 0.5369,
+        "n": 3159,
+        "gross_Sharpe": 0.7413,
+        "ann_turnover": 16.4128
+      },
+      "OOS": {
+        "name": "β目标=1.0 pool=400|OOS",
+        "CAGR": 0.148,
+        "AnnVol": 0.1691,
+        "Sharpe": 0.7831,
+        "MaxDD": -0.23,
+        "Calmar": 0.643,
+        "WinRate": 0.5717,
+        "n": 906,
+        "gross_Sharpe": 0.9265,
+        "ann_turnover": 16.0781
+      }
+    },
+    "beta_IS": {
+      "beta": 0.869,
+      "alpha_ann": 0.1021,
+      "alpha_t": 3.51
+    },
+    "beta_OOS": {
+      "beta": 0.816,
+      "alpha_ann": 0.0746,
+      "alpha_t": 1.36
+    }
+  },
+  "β目标=0.9 pool=200": {
+    "stats": {
+      "IS": {
+        "name": "β目标=0.9 pool=200|IS",
+        "CAGR": 0.1304,
+        "AnnVol": 0.2136,
+        "Sharpe": 0.5881,
+        "MaxDD": -0.4923,
+        "Calmar": 0.265,
+        "WinRate": 0.5302,
+        "n": 3159,
+        "gross_Sharpe": 0.7025,
+        "ann_turnover": 16.2971
+      },
+      "OOS": {
+        "name": "β目标=0.9 pool=200|OOS",
+        "CAGR": 0.1507,
+        "AnnVol": 0.1709,
+        "Sharpe": 0.7903,
+        "MaxDD": -0.227,
+        "Calmar": 0.664,
+        "WinRate": 0.5717,
+        "n": 906,
+        "gross_Sharpe": 0.933,
+        "ann_turnover": 16.1645
+      }
+    },
+    "beta_IS": {
+      "beta": 0.862,
+      "alpha_ann": 0.0935,
+      "alpha_t": 3.2
+    },
+    "beta_OOS": {
+      "beta": 0.83,
+      "alpha_ann": 0.0759,
+      "alpha_t": 1.4
+    }
+  },
+  "β目标=0.9 pool=400": {
+    "stats": {
+      "IS": {
+        "name": "β目标=0.9 pool=400|IS",
+        "CAGR": 0.1241,
+        "AnnVol": 0.2068,
+        "Sharpe": 0.5733,
+        "MaxDD": -0.4897,
+        "Calmar": 0.253,
+        "WinRate": 0.5283,
+        "n": 3159,
+        "gross_Sharpe": 0.6869,
+        "ann_turnover": 15.6616
+      },
+      "OOS": {
+        "name": "β目标=0.9 pool=400|OOS",
+        "CAGR": 0.1263,
+        "AnnVol": 0.1613,
+        "Sharpe": 0.6944,
+        "MaxDD": -0.2272,
+        "Calmar": 0.556,
+        "WinRate": 0.5662,
+        "n": 906,
+        "gross_Sharpe": 0.8373,
+        "ann_turnover": 15.2828
+      }
+    },
+    "beta_IS": {
+      "beta": 0.834,
+      "alpha_ann": 0.0881,
+      "alpha_t": 3.05
+    },
+    "beta_OOS": {
+      "beta": 0.773,
+      "alpha_ann": 0.0583,
+      "alpha_t": 1.09
+    }
+  },
+  "β目标=0.8 pool=200": {
+    "stats": {
+      "IS": {
+        "name": "β目标=0.8 pool=200|IS",
+        "CAGR": 0.123,
+        "AnnVol": 0.208,
+        "Sharpe": 0.5667,
+        "MaxDD": -0.4984,
+        "Calmar": 0.247,
+        "WinRate": 0.5293,
+        "n": 3159,
+        "gross_Sharpe": 0.6814,
+        "ann_turnover": 15.9141
+      },
+      "OOS": {
+        "name": "β目标=0.8 pool=200|OOS",
+        "CAGR": 0.1482,
+        "AnnVol": 0.1645,
+        "Sharpe": 0.8014,
+        "MaxDD": -0.2241,
+        "Calmar": 0.662,
+        "WinRate": 0.5662,
+        "n": 906,
+        "gross_Sharpe": 0.9448,
+        "ann_turnover": 15.6314
+      }
+    },
+    "beta_IS": {
+      "beta": 0.835,
+      "alpha_ann": 0.0873,
+      "alpha_t": 2.94
+    },
+    "beta_OOS": {
+      "beta": 0.792,
+      "alpha_ann": 0.0763,
+      "alpha_t": 1.41
+    }
+  },
+  "β目标=0.8 pool=400": {
+    "stats": {
+      "IS": {
+        "name": "β目标=0.8 pool=400|IS",
+        "CAGR": 0.1195,
+        "AnnVol": 0.2001,
+        "Sharpe": 0.5652,
+        "MaxDD": -0.505,
+        "Calmar": 0.237,
+        "WinRate": 0.5252,
+        "n": 3159,
+        "gross_Sharpe": 0.6785,
+        "ann_turnover": 15.1271
+      },
+      "OOS": {
+        "name": "β目标=0.8 pool=400|OOS",
+        "CAGR": 0.1294,
+        "AnnVol": 0.1532,
+        "Sharpe": 0.7407,
+        "MaxDD": -0.2145,
+        "Calmar": 0.603,
+        "WinRate": 0.5574,
+        "n": 906,
+        "gross_Sharpe": 0.8854,
+        "ann_turnover": 14.6931
+      }
+    },
+    "beta_IS": {
+      "beta": 0.798,
+      "alpha_ann": 0.0848,
+      "alpha_t": 2.82
+    },
+    "beta_OOS": {
+      "beta": 0.717,
+      "alpha_ann": 0.0651,
+      "alpha_t": 1.22
+    }
+  },
+  "β目标=0.7 pool=200": {
+    "stats": {
+      "IS": {
+        "name": "β目标=0.7 pool=200|IS",
+        "CAGR": 0.1256,
+        "AnnVol": 0.205,
+        "Sharpe": 0.5832,
+        "MaxDD": -0.4959,
+        "Calmar": 0.253,
+        "WinRate": 0.5302,
+        "n": 3159,
+        "gross_Sharpe": 0.6977,
+        "ann_turnover": 15.6603
+      },
+      "OOS": {
+        "name": "β目标=0.7 pool=200|OOS",
+        "CAGR": 0.1413,
+        "AnnVol": 0.1581,
+        "Sharpe": 0.7891,
+        "MaxDD": -0.2101,
+        "Calmar": 0.672,
+        "WinRate": 0.5618,
+        "n": 906,
+        "gross_Sharpe": 0.9336,
+        "ann_turnover": 15.1247
+      }
+    },
+    "beta_IS": {
+      "beta": 0.816,
+      "alpha_ann": 0.0902,
+      "alpha_t": 2.94
+    },
+    "beta_OOS": {
+      "beta": 0.75,
+      "alpha_ann": 0.0733,
+      "alpha_t": 1.37
+    }
+  },
+  "β目标=0.7 pool=400": {
+    "stats": {
+      "IS": {
+        "name": "β目标=0.7 pool=400|IS",
+        "CAGR": 0.12,
+        "AnnVol": 0.1979,
+        "Sharpe": 0.5714,
+        "MaxDD": -0.5112,
+        "Calmar": 0.235,
+        "WinRate": 0.5274,
+        "n": 3159,
+        "gross_Sharpe": 0.683,
+        "ann_turnover": 14.7481
+      },
+      "OOS": {
+        "name": "β目标=0.7 pool=400|OOS",
+        "CAGR": 0.1326,
+        "AnnVol": 0.1467,
+        "Sharpe": 0.7859,
+        "MaxDD": -0.2027,
+        "Calmar": 0.654,
+        "WinRate": 0.5464,
+        "n": 906,
+        "gross_Sharpe": 0.9331,
+        "ann_turnover": 14.2973
+      }
+    },
+    "beta_IS": {
+      "beta": 0.779,
+      "alpha_ann": 0.086,
+      "alpha_t": 2.76
+    },
+    "beta_OOS": {
+      "beta": 0.662,
+      "alpha_ann": 0.0722,
+      "alpha_t": 1.34
+    }
+  },
+  "β目标=0.6 pool=200": {
+    "stats": {
+      "IS": {
+        "name": "β目标=0.6 pool=200|IS",
+        "CAGR": 0.1267,
+        "AnnVol": 0.2029,
+        "Sharpe": 0.5917,
+        "MaxDD": -0.5091,
+        "Calmar": 0.249,
+        "WinRate": 0.5252,
+        "n": 3159,
+        "gross_Sharpe": 0.7062,
+        "ann_turnover": 15.4995
+      },
+      "OOS": {
+        "name": "β目标=0.6 pool=200|OOS",
+        "CAGR": 0.1446,
+        "AnnVol": 0.1543,
+        "Sharpe": 0.8231,
+        "MaxDD": -0.2067,
+        "Calmar": 0.699,
+        "WinRate": 0.5596,
+        "n": 906,
+        "gross_Sharpe": 0.9681,
+        "ann_turnover": 14.8128
+      }
+    },
+    "beta_IS": {
+      "beta": 0.8,
+      "alpha_ann": 0.0916,
+      "alpha_t": 2.88
+    },
+    "beta_OOS": {
+      "beta": 0.715,
+      "alpha_ann": 0.0789,
+      "alpha_t": 1.43
+    }
+  },
+  "β目标=0.6 pool=400": {
+    "stats": {
+      "IS": {
+        "name": "β目标=0.6 pool=400|IS",
+        "CAGR": 0.1302,
+        "AnnVol": 0.1959,
+        "Sharpe": 0.6216,
+        "MaxDD": -0.5097,
+        "Calmar": 0.255,
+        "WinRate": 0.5347,
+        "n": 3159,
+        "gross_Sharpe": 0.7318,
+        "ann_turnover": 14.413
+      },
+      "OOS": {
+        "name": "β目标=0.6 pool=400|OOS",
+        "CAGR": 0.1369,
+        "AnnVol": 0.1425,
+        "Sharpe": 0.8313,
+        "MaxDD": -0.1893,
+        "Calmar": 0.723,
+        "WinRate": 0.553,
+        "n": 906,
+        "gross_Sharpe": 0.9789,
+        "ann_turnover": 13.915
+      }
+    },
+    "beta_IS": {
+      "beta": 0.764,
+      "alpha_ann": 0.0955,
+      "alpha_t": 3.0
+    },
+    "beta_OOS": {
+      "beta": 0.626,
+      "alpha_ann": 0.0788,
+      "alpha_t": 1.48
+    }
+  },
+  "β目标=0.5 pool=200": {
+    "stats": {
+      "IS": {
+        "name": "β目标=0.5 pool=200|IS",
+        "CAGR": 0.1303,
+        "AnnVol": 0.203,
+        "Sharpe": 0.6075,
+        "MaxDD": -0.5105,
+        "Calmar": 0.255,
+        "WinRate": 0.5321,
+        "n": 3159,
+        "gross_Sharpe": 0.7224,
+        "ann_turnover": 15.5576
+      },
+      "OOS": {
+        "name": "β目标=0.5 pool=200|OOS",
+        "CAGR": 0.1454,
+        "AnnVol": 0.1518,
+        "Sharpe": 0.8391,
+        "MaxDD": -0.2066,
+        "Calmar": 0.704,
+        "WinRate": 0.553,
+        "n": 906,
+        "gross_Sharpe": 0.9857,
+        "ann_turnover": 14.7121
+      }
+    },
+    "beta_IS": {
+      "beta": 0.791,
+      "alpha_ann": 0.0955,
+      "alpha_t": 2.88
+    },
+    "beta_OOS": {
+      "beta": 0.692,
+      "alpha_ann": 0.0814,
+      "alpha_t": 1.48
+    }
+  },
+  "β目标=0.5 pool=400": {
+    "stats": {
+      "IS": {
+        "name": "β目标=0.5 pool=400|IS",
+        "CAGR": 0.1342,
+        "AnnVol": 0.196,
+        "Sharpe": 0.6393,
+        "MaxDD": -0.5186,
+        "Calmar": 0.259,
+        "WinRate": 0.5369,
+        "n": 3159,
+        "gross_Sharpe": 0.7486,
+        "ann_turnover": 14.3055
+      },
+      "OOS": {
+        "name": "β目标=0.5 pool=400|OOS",
+        "CAGR": 0.1352,
+        "AnnVol": 0.1403,
+        "Sharpe": 0.8315,
+        "MaxDD": -0.191,
+        "Calmar": 0.708,
+        "WinRate": 0.5486,
+        "n": 906,
+        "gross_Sharpe": 0.9788,
+        "ann_turnover": 13.6848
+      }
+    },
+    "beta_IS": {
+      "beta": 0.754,
+      "alpha_ann": 0.0997,
+      "alpha_t": 2.99
+    },
+    "beta_OOS": {
+      "beta": 0.6,
+      "alpha_ann": 0.0795,
+      "alpha_t": 1.48
+    }
+  }
+}

@@ -1,0 +1,283 @@
+{
+  "checked_at": "2026-10-20T19:03:40.768219+08:00",
+  "finished_at": "2026-10-20T12:32:41.502298+08:00",
+  "elapsed_fit_protocol_seconds": 339.328103,
+  "NN_completed": 51,
+  "Ridge_completed": 9,
+  "failed": 0,
+  "run_artifacts_verified": 123,
+  "spec_hash": "ead7f531a09fdaad2812490183e198b4d59c1983f84830ef324f789f9fefecb9",
+  "diagnostic_script_sha256": "5a963d4c7bbf98dfa78fda451e923369ef8e51cce61677fbf799c3ecf5df7b5b",
+  "prediction_dates": 66,
+  "scored_dates": 65,
+  "prediction_rows": 200855,
+  "scored_rows": 196393,
+  "winner": {
+    "lr": 0.001,
+    "weight_decay": 0.01,
+    "seed_epochs_2021": [
+      27,
+      23,
+      11
+    ],
+    "criterion": "mean_validation_Huber",
+    "spec_hash": "ead7f531a09fdaad2812490183e198b4d59c1983f84830ef324f789f9fefecb9"
+  },
+  "validation_candidates": [
+    {
+      "index": 0,
+      "lr": 0.0003,
+      "weight_decay": 0.0001,
+      "loss": 1.01403306740703,
+      "epochs": [
+        68,
+        78,
+        27
+      ]
+    },
+    {
+      "index": 1,
+      "lr": 0.0003,
+      "weight_decay": 0.001,
+      "loss": 1.014032115538915,
+      "epochs": [
+        68,
+        78,
+        27
+      ]
+    },
+    {
+      "index": 2,
+      "lr": 0.0003,
+      "weight_decay": 0.01,
+      "loss": 1.0140277594327927,
+      "epochs": [
+        68,
+        78,
+        27
+      ]
+    },
+    {
+      "index": 3,
+      "lr": 0.001,
+      "weight_decay": 0.0001,
+      "loss": 1.0136738098932037,
+      "epochs": [
+        27,
+        23,
+        11
+      ]
+    },
+    {
+      "index": 4,
+      "lr": 0.001,
+      "weight_decay": 0.001,
+      "loss": 1.0136689110235733,
+      "epochs": [
+        27,
+        23,
+        11
+      ]
+    },
+    {
+      "index": 5,
+      "lr": 0.001,
+      "weight_decay": 0.01,
+      "loss": 1.013668220603105,
+      "epochs": [
+        27,
+        23,
+        11
+      ]
+    }
+  ],
+  "ridge_winner": {
+    "alpha": 1.0,
+    "candidates": [
+      [
+        1.0159145392889224,
+        0,
+        0.0001
+      ],
+      [
+        1.0157312877350035,
+        1,
+        0.01
+      ],
+      [
+        1.0142018668916053,
+        2,
+        1.0
+      ]
+    ]
+  },
+  "final_epochs": [
+    {
+      "year": 2021,
+      "seed_epochs": [
+        27,
+        23,
+        11
+      ]
+    },
+    {
+      "year": 2022,
+      "seed_epochs": [
+        43,
+        40,
+        10
+      ]
+    },
+    {
+      "year": 2023,
+      "seed_epochs": [
+        2,
+        4,
+        4
+      ]
+    },
+    {
+      "year": 2024,
+      "seed_epochs": [
+        1,
+        6,
+        12
+      ]
+    },
+    {
+      "year": 2025,
+      "seed_epochs": [
+        8,
+        9,
+        9
+      ]
+    },
+    {
+      "year": 2026,
+      "seed_epochs": [
+        65,
+        66,
+        47
+      ]
+    }
+  ],
+  "summaries": [
+    {
+      "period": "2021",
+      "dates": 11,
+      "shared_labels": 26713,
+      "NN_mean_rank_ic": 0.10635935405692255,
+      "NN_positive_ic_fraction": 0.8181818181818182,
+      "Ridge_mean_rank_ic": 0.10667161245062333,
+      "Ridge_positive_ic_fraction": 0.8181818181818182,
+      "F17_mean_rank_ic": 0.09539805143307113,
+      "F17_positive_ic_fraction": 0.7272727272727273,
+      "NN_date_mean_huber": 0.9783118559628949,
+      "Ridge_date_mean_huber": 0.9832050936726997,
+      "zero_date_mean_huber": 0.9858087950953308,
+      "NN_beats_F17_dates": 7,
+      "NN_beats_Ridge_dates": 5
+    },
+    {
+      "period": "2022",
+      "dates": 12,
+      "shared_labels": 33024,
+      "NN_mean_rank_ic": 0.1268413613261425,
+      "NN_positive_ic_fraction": 1.0,
+      "Ridge_mean_rank_ic": 0.13019751468493554,
+      "Ridge_positive_ic_fraction": 0.9166666666666666,
+      "F17_mean_rank_ic": 0.11072993740338634,
+      "F17_positive_ic_fraction": 0.9166666666666666,
+      "NN_date_mean_huber": 0.9288455960447827,
+      "Ridge_date_mean_huber": 0.9524321295195275,
+      "zero_date_mean_huber": 0.9319599961050464,
+      "NN_beats_F17_dates": 7,
+      "NN_beats_Ridge_dates": 4
+    },
+    {
+      "period": "2023",
+      "dates": 11,
+      "shared_labels": 33526,
+      "NN_mean_rank_ic": 0.14729656047898068,
+      "NN_positive_ic_fraction": 0.9090909090909091,
+      "Ridge_mean_rank_ic": 0.13687201652342496,
+      "Ridge_positive_ic_fraction": 1.0,
+      "F17_mean_rank_ic": 0.16024794935010214,
+      "F17_positive_ic_fraction": 0.9090909090909091,
+      "NN_date_mean_huber": 0.619682555828537,
+      "Ridge_date_mean_huber": 0.6437158923421505,
+      "zero_date_mean_huber": 0.6275776007026589,
+      "NN_beats_F17_dates": 2,
+      "NN_beats_Ridge_dates": 7
+    },
+    {
+      "period": "2024",
+      "dates": 12,
+      "shared_labels": 39042,
+      "NN_mean_rank_ic": 0.09895440764441014,
+      "NN_positive_ic_fraction": 0.75,
+      "Ridge_mean_rank_ic": 0.08588368317134727,
+      "Ridge_positive_ic_fraction": 0.75,
+      "F17_mean_rank_ic": 0.08799845655459276,
+      "F17_positive_ic_fraction": 0.75,
+      "NN_date_mean_huber": 1.179692450537636,
+      "Ridge_date_mean_huber": 1.2005805741886588,
+      "zero_date_mean_huber": 1.1892564504142376,
+      "NN_beats_F17_dates": 6,
+      "NN_beats_Ridge_dates": 8
+    },
+    {
+      "period": "2025",
+      "dates": 12,
+      "shared_labels": 40239,
+      "NN_mean_rank_ic": 0.1174614920538604,
+      "NN_positive_ic_fraction": 0.8333333333333334,
+      "Ridge_mean_rank_ic": 0.11568679216668287,
+      "Ridge_positive_ic_fraction": 0.9166666666666666,
+      "F17_mean_rank_ic": 0.10028184435697367,
+      "F17_positive_ic_fraction": 0.75,
+      "NN_date_mean_huber": 0.8437621100493135,
+      "Ridge_date_mean_huber": 0.8359117579873563,
+      "zero_date_mean_huber": 0.8498639437641348,
+      "NN_beats_F17_dates": 10,
+      "NN_beats_Ridge_dates": 6
+    },
+    {
+      "period": "2026",
+      "dates": 7,
+      "shared_labels": 23849,
+      "NN_mean_rank_ic": 0.10909998622833394,
+      "NN_positive_ic_fraction": 0.8571428571428571,
+      "Ridge_mean_rank_ic": 0.07892003980343323,
+      "Ridge_positive_ic_fraction": 0.8571428571428571,
+      "F17_mean_rank_ic": 0.09476961499728769,
+      "F17_positive_ic_fraction": 0.8571428571428571,
+      "NN_date_mean_huber": 1.181766524002954,
+      "Ridge_date_mean_huber": 1.2183524772899985,
+      "zero_date_mean_huber": 1.186009379037318,
+      "NN_beats_F17_dates": 3,
+      "NN_beats_Ridge_dates": 6
+    },
+    {
+      "period": "ALL",
+      "dates": 65,
+      "shared_labels": 196393,
+      "NN_mean_rank_ic": 0.11804618608901893,
+      "NN_positive_ic_fraction": 0.8615384615384616,
+      "Ridge_mean_rank_ic": 0.11096363196329465,
+      "Ridge_positive_ic_fraction": 0.8769230769230769,
+      "F17_mean_rank_ic": 0.10867101805192851,
+      "F17_positive_ic_fraction": 0.8153846153846154,
+      "NN_date_mean_huber": 0.9427370165739573,
+      "Ridge_date_mean_huber": 0.9583337188852284,
+      "zero_date_mean_huber": 0.9492658567760021,
+      "NN_beats_F17_dates": 35,
+      "NN_beats_Ridge_dates": 36
+    }
+  ],
+  "metric": "Spearman correlation across stocks per formation date; dates equally weighted",
+  "scope": "2021-2026 historical time extrapolation with research contamination",
+  "F17": "independent research score on common cleaned factors, not original account performance",
+  "execution_backtest_accepted": false,
+  "no_additional_fits": true
+}

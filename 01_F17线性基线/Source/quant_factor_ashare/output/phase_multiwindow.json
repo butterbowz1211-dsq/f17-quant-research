@@ -1,0 +1,204 @@
+{
+  "phase_windows": {
+    "多头": {
+      "近3个月": {
+        "sharpe_mean": 1.2565,
+        "sharpe_sd": 0.3203,
+        "sharpe_min": 0.5939,
+        "sharpe_max": 1.765,
+        "maxdd_mean": -0.041,
+        "maxdd_worst": -0.0447,
+        "calmar_mean": 5.657,
+        "n_phases": 11,
+        "pct_all3_ok": 0.545
+      },
+      "近6个月": {
+        "sharpe_mean": 0.1505,
+        "sharpe_sd": 0.1773,
+        "sharpe_min": -0.078,
+        "sharpe_max": 0.467,
+        "maxdd_mean": -0.128,
+        "maxdd_worst": -0.1399,
+        "calmar_mean": 0.258,
+        "n_phases": 11,
+        "pct_all3_ok": 0.0
+      },
+      "近12个月": {
+        "sharpe_mean": 0.6496,
+        "sharpe_sd": 0.1861,
+        "sharpe_min": 0.3511,
+        "sharpe_max": 0.9051,
+        "maxdd_mean": -0.128,
+        "maxdd_worst": -0.1399,
+        "calmar_mean": 0.887,
+        "n_phases": 11,
+        "pct_all3_ok": 0.0
+      },
+      "近24个月": {
+        "sharpe_mean": 1.5924,
+        "sharpe_sd": 0.0818,
+        "sharpe_min": 1.4345,
+        "sharpe_max": 1.7196,
+        "maxdd_mean": -0.1285,
+        "maxdd_worst": -0.1399,
+        "calmar_mean": 2.829,
+        "n_phases": 11,
+        "pct_all3_ok": 1.0
+      },
+      "近36个月": {
+        "sharpe_mean": 0.7483,
+        "sharpe_sd": 0.08,
+        "sharpe_min": 0.6277,
+        "sharpe_max": 0.8952,
+        "maxdd_mean": -0.2618,
+        "maxdd_worst": -0.2917,
+        "calmar_mean": 0.624,
+        "n_phases": 11,
+        "pct_all3_ok": 0.0
+      }
+    },
+    "多空": {
+      "近3个月": {
+        "sharpe_mean": 4.2368,
+        "sharpe_sd": 0.5151,
+        "sharpe_min": 3.2607,
+        "sharpe_max": 4.9376,
+        "maxdd_mean": -0.0528,
+        "maxdd_worst": -0.0729,
+        "calmar_mean": 17.43,
+        "n_phases": 11,
+        "pct_all3_ok": 1.0
+      },
+      "近6个月": {
+        "sharpe_mean": 1.5787,
+        "sharpe_sd": 0.4425,
+        "sharpe_min": 0.7714,
+        "sharpe_max": 2.2853,
+        "maxdd_mean": -0.0802,
+        "maxdd_worst": -0.111,
+        "calmar_mean": 3.531,
+        "n_phases": 11,
+        "pct_all3_ok": 0.818
+      },
+      "近12个月": {
+        "sharpe_mean": 1.6617,
+        "sharpe_sd": 0.3967,
+        "sharpe_min": 1.0172,
+        "sharpe_max": 2.2964,
+        "maxdd_mean": -0.083,
+        "maxdd_worst": -0.1123,
+        "calmar_mean": 3.183,
+        "n_phases": 11,
+        "pct_all3_ok": 0.909
+      },
+      "近24个月": {
+        "sharpe_mean": 0.5287,
+        "sharpe_sd": 0.2858,
+        "sharpe_min": -0.0034,
+        "sharpe_max": 0.9811,
+        "maxdd_mean": -0.1355,
+        "maxdd_worst": -0.16,
+        "calmar_mean": 0.633,
+        "n_phases": 11,
+        "pct_all3_ok": 0.0
+      },
+      "近36个月": {
+        "sharpe_mean": 1.0493,
+        "sharpe_sd": 0.1897,
+        "sharpe_min": 0.7385,
+        "sharpe_max": 1.3041,
+        "maxdd_mean": -0.1389,
+        "maxdd_worst": -0.1653,
+        "calmar_mean": 1.102,
+        "n_phases": 11,
+        "pct_all3_ok": 0.182
+      }
+    }
+  },
+  "dsr": {
+    "多头|近3个月": {
+      "Sharpe": 1.6796,
+      "PSR": 0.7879,
+      "DSR_N50": 0.6974,
+      "DSR_N334": 0.6685,
+      "SR0_N50": 0.5945
+    },
+    "多头|近6个月": {
+      "Sharpe": 0.1292,
+      "PSR": 0.5362,
+      "DSR_N50": 0.3721,
+      "DSR_N334": 0.3277,
+      "SR0_N50": 0.5945
+    },
+    "多头|近12个月": {
+      "Sharpe": 0.9051,
+      "PSR": 0.8111,
+      "DSR_N50": 0.6194,
+      "DSR_N334": 0.5548,
+      "SR0_N50": 0.5945
+    },
+    "多头|近24个月": {
+      "Sharpe": 1.7196,
+      "PSR": 0.9917,
+      "DSR_N50": 0.9416,
+      "DSR_N334": 0.9084,
+      "SR0_N50": 0.5945
+    },
+    "多头|近36个月": {
+      "Sharpe": 0.8952,
+      "PSR": 0.9383,
+      "DSR_N50": 0.6982,
+      "DSR_N334": 0.5893,
+      "SR0_N50": 0.5945
+    },
+    "多空|近3个月": {
+      "Sharpe": 4.344,
+      "PSR": 0.9883,
+      "DSR_N50": 0.9748,
+      "DSR_N334": 0.9691,
+      "SR0_N50": 0.5945
+    },
+    "多空|近6个月": {
+      "Sharpe": 0.7714,
+      "PSR": 0.7083,
+      "DSR_N50": 0.5504,
+      "DSR_N334": 0.5022,
+      "SR0_N50": 0.5945
+    },
+    "多空|近12个月": {
+      "Sharpe": 1.0172,
+      "PSR": 0.8475,
+      "DSR_N50": 0.6656,
+      "DSR_N334": 0.601,
+      "SR0_N50": 0.5945
+    },
+    "多空|近24个月": {
+      "Sharpe": 0.1044,
+      "PSR": 0.5587,
+      "DSR_N50": 0.2449,
+      "DSR_N334": 0.1757,
+      "SR0_N50": 0.5945
+    },
+    "多空|近36个月": {
+      "Sharpe": 0.8411,
+      "PSR": 0.9278,
+      "DSR_N50": 0.6667,
+      "DSR_N334": 0.5537,
+      "SR0_N50": 0.5945
+    }
+  },
+  "roll_sharpe_stats": {
+    "多头": {
+      "median": 0.847,
+      "p25": 0.138,
+      "p75": 1.441,
+      "pct_negative": 0.2247
+    },
+    "多空": {
+      "median": 1.606,
+      "p25": 1.138,
+      "p75": 2.469,
+      "pct_negative": 0.0454
+    }
+  }
+}

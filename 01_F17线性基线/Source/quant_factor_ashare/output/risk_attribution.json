@@ -1,0 +1,341 @@
+{
+  "full_beta": {
+    "alpha_ann": 0.0958,
+    "beta": 0.9582,
+    "beta_t": 72.32,
+    "alpha_t": 3.65,
+    "idio_vol_ann": 0.0926,
+    "corr_mkt": 0.9117,
+    "r2": 0.8311
+  },
+  "beta_样本内 2010-2022": {
+    "alpha_ann": 0.0953,
+    "beta": 0.9631,
+    "alpha_t": 3.28
+  },
+  "beta_样本外 2023-2026": {
+    "alpha_ann": 0.0988,
+    "beta": 0.9307,
+    "alpha_t": 1.66
+  },
+  "long_drawdowns": [
+    {
+      "peak_date": "2015-06-15",
+      "trough_date": "2018-10-18",
+      "depth": -0.5021,
+      "days": 816,
+      "mkt_ret": -0.4956,
+      "beta_part": -0.4748,
+      "resid_part": -0.0273
+    },
+    {
+      "peak_date": "2011-04-22",
+      "trough_date": "2012-12-03",
+      "depth": -0.3684,
+      "days": 396,
+      "mkt_ret": -0.3448,
+      "beta_part": -0.3303,
+      "resid_part": -0.0381
+    },
+    {
+      "peak_date": "2023-07-26",
+      "trough_date": "2024-02-07",
+      "depth": -0.2549,
+      "days": 134,
+      "mkt_ret": -0.1628,
+      "beta_part": -0.156,
+      "resid_part": -0.0989
+    },
+    {
+      "peak_date": "2010-04-15",
+      "trough_date": "2010-07-05",
+      "depth": -0.2545,
+      "days": 54,
+      "mkt_ret": -0.2469,
+      "beta_part": -0.2366,
+      "resid_part": -0.0179
+    },
+    {
+      "peak_date": "2022-01-05",
+      "trough_date": "2022-04-26",
+      "depth": -0.1805,
+      "days": 73,
+      "mkt_ret": -0.2415,
+      "beta_part": -0.2314,
+      "resid_part": 0.0509
+    },
+    {
+      "peak_date": "2010-11-11",
+      "trough_date": "2011-01-25",
+      "depth": -0.1502,
+      "days": 53,
+      "mkt_ret": -0.1477,
+      "beta_part": -0.1415,
+      "resid_part": -0.0087
+    }
+  ],
+  "ls_drawdowns": [
+    {
+      "peak_date": "2024-08-29",
+      "trough_date": "2026-07-01",
+      "depth": -0.1382,
+      "days": 442,
+      "mkt_ret": 0.6395
+    },
+    {
+      "peak_date": "2015-09-07",
+      "trough_date": "2015-10-27",
+      "depth": -0.0997,
+      "days": 32,
+      "mkt_ret": 0.1397
+    },
+    {
+      "peak_date": "2019-02-01",
+      "trough_date": "2019-03-07",
+      "depth": -0.0951,
+      "days": 20,
+      "mkt_ret": 0.2151
+    },
+    {
+      "peak_date": "2021-04-29",
+      "trough_date": "2021-07-30",
+      "depth": -0.0847,
+      "days": 63,
+      "mkt_ret": 0.0159
+    },
+    {
+      "peak_date": "2020-06-09",
+      "trough_date": "2020-07-13",
+      "depth": -0.0763,
+      "days": 23
+    },
+    {
+      "peak_date": "2022-04-29",
+      "trough_date": "2022-06-20",
+      "depth": -0.0715,
+      "days": 33
+    }
+  ],
+  "rolling_beta": {
+    "mean": 0.939,
+    "std": 0.136,
+    "p10": 0.757,
+    "p90": 1.117
+  },
+  "hedge_scenarios": [
+    {
+      "name": "对冲 β·mkt (基差 +0.0%)",
+      "CAGR": 0.0849,
+      "AnnVol": 0.1078,
+      "Sharpe": 0.625,
+      "MaxDD": -0.2545,
+      "Calmar": 0.334,
+      "Sortino": 0.742,
+      "WinRate": 0.5514,
+      "Skew": -0.995,
+      "n": 4064,
+      "start": "2010-01-05",
+      "end": "2026-09-28"
+    },
+    {
+      "name": "对冲 β·mkt (基差 -3.0%)",
+      "CAGR": 0.0566,
+      "AnnVol": 0.1078,
+      "Sharpe": 0.3797,
+      "MaxDD": -0.2847,
+      "Calmar": 0.199,
+      "Sortino": 0.453,
+      "WinRate": 0.5421,
+      "Skew": -0.981,
+      "n": 4064,
+      "start": "2010-01-05",
+      "end": "2026-09-28"
+    },
+    {
+      "name": "对冲 β·mkt (基差 -6.0%)",
+      "CAGR": 0.0291,
+      "AnnVol": 0.1078,
+      "Sharpe": 0.1345,
+      "MaxDD": -0.361,
+      "Calmar": 0.081,
+      "Sortino": 0.161,
+      "WinRate": 0.533,
+      "Skew": -0.967,
+      "n": 4064,
+      "start": "2010-01-05",
+      "end": "2026-09-28"
+    },
+    {
+      "name": "对冲 β·mkt (基差 -10.0%)",
+      "CAGR": -0.0066,
+      "AnnVol": 0.1078,
+      "Sharpe": -0.1923,
+      "MaxDD": -0.4535,
+      "Calmar": -0.014,
+      "Sortino": -0.232,
+      "WinRate": 0.5212,
+      "Skew": -0.949,
+      "n": 4064,
+      "start": "2010-01-05",
+      "end": "2026-09-28"
+    }
+  ],
+  "hedge_1to1": [
+    {
+      "name": "名义1:1对冲 (基差 +0.0%)",
+      "CAGR": 0.0926,
+      "AnnVol": 0.093,
+      "Sharpe": 0.7836,
+      "MaxDD": -0.2329,
+      "Calmar": 0.398,
+      "Sortino": 1.028,
+      "WinRate": 0.549,
+      "Skew": -0.442,
+      "n": 4064,
+      "start": "2010-01-05",
+      "end": "2026-09-28"
+    },
+    {
+      "name": "名义1:1对冲 (基差 -3.0%)",
+      "CAGR": 0.0603,
+      "AnnVol": 0.093,
+      "Sharpe": 0.4611,
+      "MaxDD": -0.3134,
+      "Calmar": 0.192,
+      "Sortino": 0.605,
+      "WinRate": 0.5406,
+      "Skew": -0.442,
+      "n": 4064,
+      "start": "2010-01-05",
+      "end": "2026-09-28"
+    },
+    {
+      "name": "名义1:1对冲 (基差 -6.0%)",
+      "CAGR": 0.029,
+      "AnnVol": 0.093,
+      "Sharpe": 0.1386,
+      "MaxDD": -0.3857,
+      "Calmar": 0.075,
+      "Sortino": 0.182,
+      "WinRate": 0.5325,
+      "Skew": -0.442,
+      "n": 4064,
+      "start": "2010-01-05",
+      "end": "2026-09-28"
+    },
+    {
+      "name": "名义1:1对冲 (基差 -10.0%)",
+      "CAGR": -0.0114,
+      "AnnVol": 0.093,
+      "Sharpe": -0.2913,
+      "MaxDD": -0.4756,
+      "Calmar": -0.024,
+      "Sortino": -0.383,
+      "WinRate": 0.5185,
+      "Skew": -0.442,
+      "n": 4064,
+      "start": "2010-01-05",
+      "end": "2026-09-28"
+    }
+  ],
+  "partial_hedge": [
+    {
+      "name": "目标β=0.9",
+      "CAGR": 0.1432,
+      "AnnVol": 0.2107,
+      "Sharpe": 0.6466,
+      "MaxDD": -0.5031,
+      "Calmar": 0.285,
+      "Sortino": 0.739,
+      "WinRate": 0.5672,
+      "Skew": -0.947,
+      "n": 3812,
+      "start": "2011-01-19",
+      "end": "2026-09-28"
+    },
+    {
+      "name": "目标β=0.8",
+      "CAGR": 0.1397,
+      "AnnVol": 0.1952,
+      "Sharpe": 0.6661,
+      "MaxDD": -0.4692,
+      "Calmar": 0.298,
+      "Sortino": 0.762,
+      "WinRate": 0.5656,
+      "Skew": -0.943,
+      "n": 3812,
+      "start": "2011-01-19",
+      "end": "2026-09-28"
+    },
+    {
+      "name": "目标β=0.7",
+      "CAGR": 0.1342,
+      "AnnVol": 0.1779,
+      "Sharpe": 0.6852,
+      "MaxDD": -0.4268,
+      "Calmar": 0.314,
+      "Sortino": 0.783,
+      "WinRate": 0.5677,
+      "Skew": -0.944,
+      "n": 3812,
+      "start": "2011-01-19",
+      "end": "2026-09-28"
+    },
+    {
+      "name": "目标β=0.5",
+      "CAGR": 0.1225,
+      "AnnVol": 0.1434,
+      "Sharpe": 0.7385,
+      "MaxDD": -0.3367,
+      "Calmar": 0.364,
+      "Sortino": 0.846,
+      "WinRate": 0.5679,
+      "Skew": -0.934,
+      "n": 3812,
+      "start": "2011-01-19",
+      "end": "2026-09-28"
+    }
+  ],
+  "predictors": {
+    "r2": 0.0089,
+    "n": 177,
+    "coef": {
+      "const": [
+        0.0116,
+        0.94
+      ],
+      "mkt_24m": [
+        -0.0148,
+        -0.92
+      ],
+      "mkt_vol126": [
+        0.0535,
+        0.32
+      ],
+      "own_12m": [
+        -0.0064,
+        -0.25
+      ],
+      "own_vol60": [
+        0.0228,
+        0.16
+      ],
+      "own_dd": [
+        0.0463,
+        1.12
+      ]
+    }
+  },
+  "cost_多头组合(可交易)": {
+    "ann_turnover": 17.7114,
+    "ann_cost_drag": 0.0266,
+    "gross_sharpe": 0.7446,
+    "net_sharpe": 0.6267
+  },
+  "cost_多空组合(学术)": {
+    "ann_turnover": 22.2906,
+    "ann_cost_drag": 0.0335,
+    "gross_sharpe": 1.8012,
+    "net_sharpe": 1.4248
+  }
+}

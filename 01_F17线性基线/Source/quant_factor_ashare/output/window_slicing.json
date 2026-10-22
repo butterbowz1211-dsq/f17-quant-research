@@ -1,0 +1,272 @@
+{
+  "多头|近 3 个月": {
+    "label": "多头|近 3 个月",
+    "n_days": 63,
+    "years": 0.25,
+    "CAGR": 0.2882,
+    "AnnVol": 0.1451,
+    "Sharpe": 1.6796,
+    "Sharpe_se": 3.105,
+    "MaxDD": -0.0375,
+    "Calmar": 7.68
+  },
+  "多头|近 6 个月": {
+    "label": "多头|近 6 个月",
+    "n_days": 126,
+    "years": 0.5,
+    "CAGR": 0.0287,
+    "AnnVol": 0.1452,
+    "Sharpe": 0.1292,
+    "Sharpe_se": 1.42,
+    "MaxDD": -0.1346,
+    "Calmar": 0.213
+  },
+  "多头|近 12 个月": {
+    "label": "多头|近 12 个月",
+    "n_days": 252,
+    "years": 1.0,
+    "CAGR": 0.1528,
+    "AnnVol": 0.147,
+    "Sharpe": 0.9051,
+    "Sharpe_se": 1.187,
+    "MaxDD": -0.1346,
+    "Calmar": 1.136
+  },
+  "多头|近 24 个月": {
+    "label": "多头|近 24 个月",
+    "n_days": 504,
+    "years": 2.0,
+    "CAGR": 0.3976,
+    "AnnVol": 0.1941,
+    "Sharpe": 1.7196,
+    "Sharpe_se": 1.113,
+    "MaxDD": -0.1346,
+    "Calmar": 2.955
+  },
+  "多头|近 36 个月": {
+    "label": "多头|近 36 个月",
+    "n_days": 756,
+    "years": 3.0,
+    "CAGR": 0.1977,
+    "AnnVol": 0.202,
+    "Sharpe": 0.8952,
+    "Sharpe_se": 0.683,
+    "MaxDD": -0.2543,
+    "Calmar": 0.777
+  },
+  "多头|样本外3.6年": {
+    "label": "多头|样本外3.6年",
+    "n_days": 906,
+    "years": 3.6,
+    "CAGR": 0.2153,
+    "AnnVol": 0.1898,
+    "Sharpe": 1.0171,
+    "Sharpe_se": 0.65,
+    "MaxDD": -0.2543,
+    "Calmar": 0.847
+  },
+  "多头|全样本16.7年": {
+    "label": "多头|全样本16.7年",
+    "n_days": 4065,
+    "years": 16.13,
+    "CAGR": 0.1553,
+    "AnnVol": 0.2238,
+    "Sharpe": 0.6687,
+    "Sharpe_se": 0.275,
+    "MaxDD": -0.485,
+    "Calmar": 0.32
+  },
+  "多空|近 3 个月": {
+    "label": "多空|近 3 个月",
+    "n_days": 63,
+    "years": 0.25,
+    "CAGR": 0.9381,
+    "AnnVol": 0.1505,
+    "Sharpe": 4.344,
+    "Sharpe_se": 6.461,
+    "MaxDD": -0.0578,
+    "Calmar": 16.235
+  },
+  "多空|近 6 个月": {
+    "label": "多空|近 6 个月",
+    "n_days": 126,
+    "years": 0.5,
+    "CAGR": 0.1276,
+    "AnnVol": 0.1428,
+    "Sharpe": 0.7714,
+    "Sharpe_se": 1.611,
+    "MaxDD": -0.111,
+    "Calmar": 1.15
+  },
+  "多空|近 12 个月": {
+    "label": "多空|近 12 个月",
+    "n_days": 252,
+    "years": 1.0,
+    "CAGR": 0.1554,
+    "AnnVol": 0.1308,
+    "Sharpe": 1.0172,
+    "Sharpe_se": 1.232,
+    "MaxDD": -0.1123,
+    "Calmar": 1.385
+  },
+  "多空|近 24 个月": {
+    "label": "多空|近 24 个月",
+    "n_days": 504,
+    "years": 2.0,
+    "CAGR": 0.0254,
+    "AnnVol": 0.134,
+    "Sharpe": 0.1044,
+    "Sharpe_se": 0.709,
+    "MaxDD": -0.1177,
+    "Calmar": 0.215
+  },
+  "多空|近 36 个月": {
+    "label": "多空|近 36 个月",
+    "n_days": 756,
+    "years": 3.0,
+    "CAGR": 0.1226,
+    "AnnVol": 0.1227,
+    "Sharpe": 0.8411,
+    "Sharpe_se": 0.672,
+    "MaxDD": -0.1225,
+    "Calmar": 1.001
+  },
+  "多空|样本外3.6年": {
+    "label": "多空|样本外3.6年",
+    "n_days": 906,
+    "years": 3.6,
+    "CAGR": 0.1483,
+    "AnnVol": 0.1159,
+    "Sharpe": 1.0784,
+    "Sharpe_se": 0.663,
+    "MaxDD": -0.1225,
+    "Calmar": 1.21
+  },
+  "多空|全样本16.7年": {
+    "label": "多空|全样本16.7年",
+    "n_days": 4065,
+    "years": 16.13,
+    "CAGR": 0.1655,
+    "AnnVol": 0.0906,
+    "Sharpe": 1.5156,
+    "Sharpe_se": 0.365,
+    "MaxDD": -0.1225,
+    "Calmar": 1.351
+  },
+  "slicing": {
+    "1": {
+      "IS_sharpe": 0.3292,
+      "OOS_sharpe": 0.4073,
+      "OOS_cagr": 0.0817,
+      "OOS_maxdd": -0.297,
+      "OOS_calmar": 0.275,
+      "turnover": 84.7098
+    },
+    "3": {
+      "IS_sharpe": 0.4872,
+      "OOS_sharpe": 0.6627,
+      "OOS_cagr": 0.1354,
+      "OOS_maxdd": -0.2637,
+      "OOS_calmar": 0.514,
+      "turnover": 50.6826
+    },
+    "5": {
+      "IS_sharpe": 0.537,
+      "OOS_sharpe": 0.7943,
+      "OOS_cagr": 0.1645,
+      "OOS_maxdd": -0.2607,
+      "OOS_calmar": 0.631,
+      "turnover": 39.4614
+    },
+    "10": {
+      "IS_sharpe": 0.5633,
+      "OOS_sharpe": 0.829,
+      "OOS_cagr": 0.1727,
+      "OOS_maxdd": -0.2623,
+      "OOS_calmar": 0.659,
+      "turnover": 25.3614
+    },
+    "21": {
+      "IS_sharpe": 0.5856,
+      "OOS_sharpe": 0.8301,
+      "OOS_cagr": 0.1732,
+      "OOS_maxdd": -0.2596,
+      "OOS_calmar": 0.667,
+      "turnover": 16.6786
+    }
+  },
+  "freq": {
+    "调仓5日 缓冲0.0": {
+      "IS_sharpe": 0.5242,
+      "OOS_sharpe": 0.8178,
+      "OOS_cagr": 0.1694,
+      "OOS_maxdd": -0.2629,
+      "OOS_calmar": 0.644,
+      "turnover": 40.0501
+    },
+    "调仓5日 缓冲0.6": {
+      "IS_sharpe": 0.6075,
+      "OOS_sharpe": 0.9015,
+      "OOS_cagr": 0.1863,
+      "OOS_maxdd": -0.2566,
+      "OOS_calmar": 0.726,
+      "turnover": 27.4014
+    },
+    "调仓10日 缓冲0.0": {
+      "IS_sharpe": 0.5019,
+      "OOS_sharpe": 0.8499,
+      "OOS_cagr": 0.1776,
+      "OOS_maxdd": -0.2469,
+      "OOS_calmar": 0.719,
+      "turnover": 26.2456
+    },
+    "调仓10日 缓冲0.6": {
+      "IS_sharpe": 0.5715,
+      "OOS_sharpe": 0.9423,
+      "OOS_cagr": 0.1951,
+      "OOS_maxdd": -0.2492,
+      "OOS_calmar": 0.783,
+      "turnover": 20.4266
+    },
+    "调仓15日 缓冲0.6": {
+      "IS_sharpe": 0.6398,
+      "OOS_sharpe": 0.7805,
+      "OOS_cagr": 0.1619,
+      "OOS_maxdd": -0.2807,
+      "OOS_calmar": 0.577,
+      "turnover": 17.1247
+    },
+    "调仓21日 缓冲0.0": {
+      "IS_sharpe": 0.5717,
+      "OOS_sharpe": 0.8676,
+      "OOS_cagr": 0.184,
+      "OOS_maxdd": -0.2549,
+      "OOS_calmar": 0.722,
+      "turnover": 17.7114
+    },
+    "调仓21日 缓冲0.6": {
+      "IS_sharpe": 0.5898,
+      "OOS_sharpe": 1.0171,
+      "OOS_cagr": 0.2153,
+      "OOS_maxdd": -0.2543,
+      "OOS_calmar": 0.847,
+      "turnover": 15.1142
+    },
+    "调仓42日 缓冲0.6": {
+      "IS_sharpe": 0.6014,
+      "OOS_sharpe": 0.9689,
+      "OOS_cagr": 0.2064,
+      "OOS_maxdd": -0.2499,
+      "OOS_calmar": 0.826,
+      "turnover": 10.4207
+    },
+    "调仓63日 缓冲0.6": {
+      "IS_sharpe": 0.5484,
+      "OOS_sharpe": 0.8649,
+      "OOS_cagr": 0.1812,
+      "OOS_maxdd": -0.2459,
+      "OOS_calmar": 0.737,
+      "turnover": 8.5887
+    }
+  }
+}

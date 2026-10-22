@@ -1,0 +1,348 @@
+{
+  "market_used": {
+    "mkt_vw": {
+      "bear_month_pct": 0.427,
+      "n_bear": 76,
+      "sig2_median_ann": 0.034,
+      "sig2_mean_bear": 0.0317,
+      "sig2_mean_nonbear": 0.0564
+    },
+    "mkt_ew": {
+      "bear_month_pct": 0.2865,
+      "n_bear": 51,
+      "sig2_median_ann": 0.0556,
+      "sig2_mean_bear": 0.0664,
+      "sig2_mean_nonbear": 0.0829
+    }
+  },
+  "panels": {
+    "mkt_vw|多头组合(可交易)": {
+      "dm_table5": {
+        "label": "mkt_vw|多头组合(可交易)",
+        "n": 177,
+        "col1_IBonly": {
+          "const": [
+            0.017498,
+            2.46
+          ],
+          "IB": [
+            -0.00458,
+            -0.53
+          ],
+          "r2": 0.0013
+        },
+        "col2_sig2only": {
+          "const": [
+            0.015189,
+            2.37
+          ],
+          "sig2": [
+            0.007454,
+            0.08
+          ],
+          "r2": 0.0
+        },
+        "col3_both": {
+          "const": [
+            0.01773,
+            1.85
+          ],
+          "IB": [
+            -0.004683,
+            -0.51
+          ],
+          "sig2": [
+            -0.004104,
+            -0.04
+          ],
+          "r2": 0.0013
+        },
+        "col4_interact": {
+          "const": [
+            0.018446,
+            1.91
+          ],
+          "IB": [
+            -0.017216,
+            -1.06
+          ],
+          "sig2": [
+            -0.016741,
+            -0.16
+          ],
+          "IB_sig2": [
+            0.385026,
+            0.9
+          ],
+          "r2": 0.0039
+        },
+        "sig2_mean_bear": 0.03173426733275114,
+        "n_bear_months": 76,
+        "n_months": 177
+      },
+      "henriksson_merton": {
+        "label": "mkt_vw|多头组合(可交易)",
+        "n": 177,
+        "alpha0_ann": 0.123,
+        "alphaB_ann": 0.0055,
+        "t_alphaB": 0.09,
+        "beta0": 0.947,
+        "t_beta0": 12.46,
+        "betaB": 0.163,
+        "t_betaB": 1.03,
+        "betaBU": -0.267,
+        "t_betaBU": -1.3,
+        "down_beta_bear": 1.109,
+        "up_beta_bear": 0.843,
+        "up_minus_down_bear": -0.267,
+        "r2": 0.777
+      }
+    },
+    "mkt_vw|多空组合(学术)": {
+      "dm_table5": {
+        "label": "mkt_vw|多空组合(学术)",
+        "n": 177,
+        "col1_IBonly": {
+          "const": [
+            0.012405,
+            4.94
+          ],
+          "IB": [
+            0.001348,
+            0.45
+          ],
+          "r2": 0.0005
+        },
+        "col2_sig2only": {
+          "const": [
+            0.014012,
+            6.36
+          ],
+          "sig2": [
+            -0.022371,
+            -0.94
+          ],
+          "r2": 0.0014
+        },
+        "col3_both": {
+          "const": [
+            0.013554,
+            3.96
+          ],
+          "IB": [
+            0.000843,
+            0.26
+          ],
+          "sig2": [
+            -0.02029,
+            -0.76
+          ],
+          "r2": 0.0016
+        },
+        "col4_interact": {
+          "const": [
+            0.013331,
+            3.87
+          ],
+          "IB": [
+            0.004753,
+            0.84
+          ],
+          "sig2": [
+            -0.016348,
+            -0.59
+          ],
+          "IB_sig2": [
+            -0.120104,
+            -0.9
+          ],
+          "r2": 0.0028
+        },
+        "sig2_mean_bear": 0.03173426733275114,
+        "n_bear_months": 76,
+        "n_months": 177
+      },
+      "henriksson_merton": {
+        "label": "mkt_vw|多空组合(学术)",
+        "n": 177,
+        "alpha0_ann": 0.1645,
+        "alphaB_ann": 0.0446,
+        "t_alphaB": 0.97,
+        "beta0": -0.17,
+        "t_beta0": -2.33,
+        "betaB": -0.021,
+        "t_betaB": -0.17,
+        "betaBU": -0.093,
+        "t_betaBU": -0.68,
+        "down_beta_bear": -0.19,
+        "up_beta_bear": -0.283,
+        "up_minus_down_bear": -0.093,
+        "r2": 0.1674
+      }
+    },
+    "mkt_ew|多头组合(可交易)": {
+      "dm_table5": {
+        "label": "mkt_ew|多头组合(可交易)",
+        "n": 177,
+        "col1_IBonly": {
+          "const": [
+            0.015515,
+            2.67
+          ],
+          "IB": [
+            5.6e-05,
+            0.01
+          ],
+          "r2": 0.0
+        },
+        "col2_sig2only": {
+          "const": [
+            0.016519,
+            2.39
+          ],
+          "sig2": [
+            -0.012607,
+            -0.22
+          ],
+          "r2": 0.0003
+        },
+        "col3_both": {
+          "const": [
+            0.016568,
+            2.05
+          ],
+          "IB": [
+            -0.000155,
+            -0.02
+          ],
+          "sig2": [
+            -0.012673,
+            -0.22
+          ],
+          "r2": 0.0003
+        },
+        "col4_interact": {
+          "const": [
+            0.016842,
+            2.07
+          ],
+          "IB": [
+            -0.014121,
+            -0.49
+          ],
+          "sig2": [
+            -0.015964,
+            -0.28
+          ],
+          "IB_sig2": [
+            0.209406,
+            0.56
+          ],
+          "r2": 0.0016
+        },
+        "sig2_mean_bear": 0.06643110631236865,
+        "n_bear_months": 51,
+        "n_months": 177
+      },
+      "henriksson_merton": {
+        "label": "mkt_ew|多头组合(可交易)",
+        "n": 177,
+        "alpha0_ann": 0.0496,
+        "alphaB_ann": 0.0407,
+        "t_alphaB": 0.77,
+        "beta0": 0.744,
+        "t_beta0": 21.96,
+        "betaB": 0.128,
+        "t_betaB": 1.62,
+        "betaBU": -0.138,
+        "t_betaBU": -1.28,
+        "down_beta_bear": 0.872,
+        "up_beta_bear": 0.734,
+        "up_minus_down_bear": -0.138,
+        "r2": 0.8881
+      }
+    },
+    "mkt_ew|多空组合(学术)": {
+      "dm_table5": {
+        "label": "mkt_ew|多空组合(学术)",
+        "n": 177,
+        "col1_IBonly": {
+          "const": [
+            0.013117,
+            6.3
+          ],
+          "IB": [
+            -0.000461,
+            -0.15
+          ],
+          "r2": 0.0001
+        },
+        "col2_sig2only": {
+          "const": [
+            0.014258,
+            6.62
+          ],
+          "sig2": [
+            -0.016269,
+            -1.18
+          ],
+          "r2": 0.0025
+        },
+        "col3_both": {
+          "const": [
+            0.014495,
+            5.48
+          ],
+          "IB": [
+            -0.000737,
+            -0.23
+          ],
+          "sig2": [
+            -0.01658,
+            -1.17
+          ],
+          "r2": 0.0026
+        },
+        "col4_interact": {
+          "const": [
+            0.01458,
+            5.48
+          ],
+          "IB": [
+            -0.005079,
+            -0.52
+          ],
+          "sig2": [
+            -0.017604,
+            -1.23
+          ],
+          "IB_sig2": [
+            0.065105,
+            0.52
+          ],
+          "r2": 0.0032
+        },
+        "sig2_mean_bear": 0.06643110631236865,
+        "n_bear_months": 51,
+        "n_months": 177
+      },
+      "henriksson_merton": {
+        "label": "mkt_ew|多空组合(学术)",
+        "n": 177,
+        "alpha0_ann": 0.1852,
+        "alphaB_ann": 0.0445,
+        "t_alphaB": 0.93,
+        "beta0": -0.152,
+        "t_beta0": -3.08,
+        "betaB": 0.039,
+        "t_betaB": 0.38,
+        "betaBU": -0.131,
+        "t_betaBU": -1.24,
+        "down_beta_bear": -0.113,
+        "up_beta_bear": -0.244,
+        "up_minus_down_bear": -0.131,
+        "r2": 0.2044
+      }
+    }
+  }
+}

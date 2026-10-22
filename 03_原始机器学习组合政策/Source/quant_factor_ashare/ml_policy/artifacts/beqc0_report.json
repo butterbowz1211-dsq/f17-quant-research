@@ -1,0 +1,52 @@
+{
+  "tag": "beqc0",
+  "kind": "equal",
+  "config": {
+    "kind": "equal",
+    "n": 50,
+    "cash": 0.181,
+    "buffer": 0.6,
+    "folds": [
+      0
+    ],
+    "rebalance": 21,
+    "first_year": 2013,
+    "cap": 0.03,
+    "partial": 0.5,
+    "band": 0.0025,
+    "capital": 10000000.0,
+    "strict": false,
+    "tag": "beqc0",
+    "out": null
+  },
+  "folds": [
+    {
+      "index": 0,
+      "label": "fold0: train 2013-01-01..2018-12-31 | valid 2019-01-01..2020-12-31 | test 2021-01-04..2021-12-31 | untouched",
+      "contamination": "untouched",
+      "n_decisions": 105,
+      "test": {
+        "n_days": 243,
+        "total_return": 0.05827462534018735,
+        "cagr": 0.06049697541530641,
+        "vol": 0.13782336573741097,
+        "sharpe": 0.43894571208316546,
+        "max_drawdown": -0.09400719264799062,
+        "sortino": 0.6385270041733758,
+        "hit_rate": 0.5596707818930041,
+        "skew": -0.31969394106228327,
+        "worst_day": -0.025767490636853907,
+        "best_day": 0.02434567719214087,
+        "mean_holdings": 854.312757201646,
+        "mean_cash_weight": 0.22437499715095408,
+        "annual_two_way_turnover": 1.087983105267177,
+        "total_cost_bp_of_capital": 18.70078576243282,
+        "blocked_buy_days": 0,
+        "blocked_sell_days": 243,
+        "stale_weight_mean": 0.0,
+        "stale_weight_max": 0.0
+      },
+      "seconds": 35.5
+    }
+  ]
+}

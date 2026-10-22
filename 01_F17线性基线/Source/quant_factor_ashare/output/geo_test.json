@@ -1,0 +1,243 @@
+{
+  "ic": {
+    "GEO_LINK": {
+      "n_periods": 192,
+      "IS": {
+        "IC": 0.01237,
+        "t": 4.85,
+        "ICIR": 0.396,
+        "pos_rate": 0.647
+      },
+      "OOS": {
+        "IC": 0.01097,
+        "t": 2.17,
+        "ICIR": 0.335,
+        "pos_rate": 0.571
+      }
+    },
+    "GEO_CITY": {
+      "n_periods": 192,
+      "IS": {
+        "IC": 0.00436,
+        "t": 1.75,
+        "ICIR": 0.143,
+        "pos_rate": 0.547
+      },
+      "OOS": {
+        "IC": 0.00255,
+        "t": 0.46,
+        "ICIR": 0.07,
+        "pos_rate": 0.405
+      }
+    },
+    "GEO_PROV": {
+      "n_periods": 192,
+      "IS": {
+        "IC": 0.01083,
+        "t": 3.9,
+        "ICIR": 0.318,
+        "pos_rate": 0.64
+      },
+      "OOS": {
+        "IC": 0.00356,
+        "t": 0.73,
+        "ICIR": 0.113,
+        "pos_rate": 0.548
+      }
+    },
+    "GEO_IND": {
+      "n_periods": 192,
+      "IS": {
+        "IC": 0.05286,
+        "t": 7.37,
+        "ICIR": 0.602,
+        "pos_rate": 0.707
+      },
+      "OOS": {
+        "IC": 0.04366,
+        "t": 3.43,
+        "ICIR": 0.529,
+        "pos_rate": 0.667
+      }
+    },
+    "COMMOVE": {
+      "n_periods": 191,
+      "IS": {
+        "IC": 0.05177,
+        "t": 9.53,
+        "ICIR": 0.781,
+        "pos_rate": 0.805
+      },
+      "OOS": {
+        "IC": 0.05551,
+        "t": 6.11,
+        "ICIR": 0.943,
+        "pos_rate": 0.81
+      }
+    },
+    "TURN": {
+      "n_periods": 192,
+      "IS": {
+        "IC": 0.09183,
+        "t": 11.42,
+        "ICIR": 0.932,
+        "pos_rate": 0.813
+      },
+      "OOS": {
+        "IC": 0.09865,
+        "t": 5.89,
+        "ICIR": 0.909,
+        "pos_rate": 0.857
+      }
+    },
+    "MAX5": {
+      "n_periods": 192,
+      "IS": {
+        "IC": 0.07988,
+        "t": 9.55,
+        "ICIR": 0.78,
+        "pos_rate": 0.8
+      },
+      "OOS": {
+        "IC": 0.09778,
+        "t": 6.19,
+        "ICIR": 0.955,
+        "pos_rate": 0.881
+      }
+    },
+    "ILLIQ": {
+      "n_periods": 192,
+      "IS": {
+        "IC": 0.05758,
+        "t": 9.55,
+        "ICIR": 0.78,
+        "pos_rate": 0.78
+      },
+      "OOS": {
+        "IC": 0.05141,
+        "t": 4.1,
+        "ICIR": 0.633,
+        "pos_rate": 0.786
+      }
+    },
+    "LEAD_LAG": {
+      "n_periods": 186,
+      "IS": {
+        "IC": 0.01978,
+        "t": 3.37,
+        "ICIR": 0.281,
+        "pos_rate": 0.604
+      },
+      "OOS": {
+        "IC": 0.0082,
+        "t": 0.78,
+        "ICIR": 0.121,
+        "pos_rate": 0.548
+      }
+    }
+  },
+  "results": {
+    "F17|多头": {
+      "IS_sharpe_mean": 0.5896,
+      "OOS_sharpe_mean": 0.8588,
+      "OOS_sharpe_sd": 0.0823,
+      "OOS_sharpe_min": 0.7598,
+      "OOS_sharpe_max": 1.0171,
+      "OOS_cagr_mean": 0.1793,
+      "OOS_maxdd_mean": -0.2625,
+      "OOS_calmar_mean": 0.683,
+      "ch4_oos": {
+        "alpha_a_pct": 12.86,
+        "t": 4.29,
+        "r2": 0.913
+      },
+      "n_phases": 7,
+      "n_factors": 17
+    },
+    "F17|多空": {
+      "IS_sharpe_mean": 1.5863,
+      "OOS_sharpe_mean": 1.2008,
+      "OOS_sharpe_sd": 0.1196,
+      "OOS_sharpe_min": 1.0291,
+      "OOS_sharpe_max": 1.4161,
+      "OOS_cagr_mean": 0.1639,
+      "OOS_maxdd_mean": -0.1354,
+      "OOS_calmar_mean": 1.211,
+      "ch4_oos": {
+        "alpha_a_pct": 13.18,
+        "t": 4.05,
+        "r2": 0.885
+      },
+      "n_phases": 7,
+      "n_factors": 17
+    },
+    "F17+GEO_LINK|多头": {
+      "IS_sharpe_mean": 0.6072,
+      "OOS_sharpe_mean": 0.7808,
+      "OOS_sharpe_sd": 0.0655,
+      "OOS_sharpe_min": 0.6924,
+      "OOS_sharpe_max": 0.8857,
+      "OOS_cagr_mean": 0.1633,
+      "OOS_maxdd_mean": -0.2679,
+      "OOS_calmar_mean": 0.61,
+      "ch4_oos": {
+        "alpha_a_pct": 12.48,
+        "t": 4.91,
+        "r2": 0.896
+      },
+      "n_phases": 7,
+      "n_factors": 18
+    },
+    "F17+GEO_LINK|多空": {
+      "IS_sharpe_mean": 1.6151,
+      "OOS_sharpe_mean": 1.1559,
+      "OOS_sharpe_sd": 0.1596,
+      "OOS_sharpe_min": 0.9432,
+      "OOS_sharpe_max": 1.4088,
+      "OOS_cagr_mean": 0.1561,
+      "OOS_maxdd_mean": -0.1372,
+      "OOS_calmar_mean": 1.138,
+      "ch4_oos": {
+        "alpha_a_pct": 12.32,
+        "t": 4.52,
+        "r2": 0.899
+      },
+      "n_phases": 7,
+      "n_factors": 18
+    },
+    "F17+GEO_PROV|多头": {
+      "IS_sharpe_mean": 0.6245,
+      "OOS_sharpe_mean": 0.8394,
+      "OOS_sharpe_sd": 0.0554,
+      "OOS_sharpe_min": 0.7847,
+      "OOS_sharpe_max": 0.9268,
+      "OOS_cagr_mean": 0.175,
+      "OOS_maxdd_mean": -0.2639,
+      "OOS_calmar_mean": 0.663,
+      "ch4_oos": {
+        "alpha_a_pct": 12.77,
+        "t": 3.49,
+        "r2": 0.908
+      },
+      "n_phases": 7,
+      "n_factors": 18
+    },
+    "F17+GEO_PROV|多空": {
+      "IS_sharpe_mean": 1.6468,
+      "OOS_sharpe_mean": 1.1972,
+      "OOS_sharpe_sd": 0.169,
+      "OOS_sharpe_min": 1.0219,
+      "OOS_sharpe_max": 1.5068,
+      "OOS_cagr_mean": 0.1615,
+      "OOS_maxdd_mean": -0.1373,
+      "OOS_calmar_mean": 1.177,
+      "ch4_oos": {
+        "alpha_a_pct": 13.75,
+        "t": 4.5,
+        "r2": 0.882
+      },
+      "n_phases": 7,
+      "n_factors": 18
+    }
+  }
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "date": "2013-01-14",
+    "reason": "Factor REV_LT has insufficient usable coverage",
+    "eligible": 1447,
+    "finite_factors": {
+      "TURN": 1441,
+      "MAX5": 1308,
+      "INTRADAY": 1370,
+      "ILLIQ": 1372,
+      "COMMOVE": 1362,
+      "TURN_SHOCK": 1436,
+      "REV_1W": 1369,
+      "ISKEW": 1303,
+      "IVOL": 1373,
+      "OVERNIGHT": 1364,
+      "LEAD_LAG": 1373,
+      "CO_SKEW": 1373,
+      "BETA": 1373,
+      "REV_LT": 0,
+      "SIZE": 1447,
+      "HIGH52": 1373,
+      "RES_MOM": 1361
+    }
+  }
+]

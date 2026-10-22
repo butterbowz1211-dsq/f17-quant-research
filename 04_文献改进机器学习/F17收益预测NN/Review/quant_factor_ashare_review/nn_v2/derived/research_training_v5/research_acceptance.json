@@ -1,0 +1,6 @@
+{
+  "status": "RESEARCH_TRAINING_AUTHORIZED_WITH_LIMITATIONS",
+  "execution_accepted": false,
+  "basis": "Latest explicit user instruction plus numerical/schema/time-boundary checks",
+  "strict_gate": "unchanged; requires independent data/execution acceptance"
+}

@@ -1,0 +1,364 @@
+{
+  "version": "nn_v2.2_research",
+  "decision_date": "2026-10-20",
+  "scope": "Independent NN research implementation; original F17 sources read-only",
+  "factors": [
+    "TURN",
+    "MAX5",
+    "INTRADAY",
+    "ILLIQ",
+    "COMMOVE",
+    "TURN_SHOCK",
+    "REV_1W",
+    "ISKEW",
+    "IVOL",
+    "OVERNIGHT",
+    "LEAD_LAG",
+    "CO_SKEW",
+    "BETA",
+    "REV_LT",
+    "SIZE",
+    "HIGH52",
+    "RES_MOM"
+  ],
+  "features": [
+    "TURN",
+    "MAX5",
+    "INTRADAY",
+    "ILLIQ",
+    "COMMOVE",
+    "TURN_SHOCK",
+    "REV_1W",
+    "ISKEW",
+    "IVOL",
+    "OVERNIGHT",
+    "LEAD_LAG",
+    "CO_SKEW",
+    "BETA",
+    "REV_LT",
+    "SIZE",
+    "HIGH52",
+    "RES_MOM",
+    "TURN_missing",
+    "MAX5_missing",
+    "INTRADAY_missing",
+    "ILLIQ_missing",
+    "COMMOVE_missing",
+    "TURN_SHOCK_missing",
+    "REV_1W_missing",
+    "ISKEW_missing",
+    "IVOL_missing",
+    "OVERNIGHT_missing",
+    "LEAD_LAG_missing",
+    "CO_SKEW_missing",
+    "BETA_missing",
+    "REV_LT_missing",
+    "SIZE_missing",
+    "HIGH52_missing",
+    "RES_MOM_missing"
+  ],
+  "preprocessing": {
+    "order": [
+      "formation_universe",
+      "MAD_clip_3x1.4826",
+      "industry_size_residual",
+      "cross_section_zscore_ddof1",
+      "formation_median",
+      "missing_flags"
+    ],
+    "min_cross_section": 30,
+    "min_industry_size": 5,
+    "eps": 1e-12,
+    "all_missing_factor": "reject_date_and_report; retain_all_17_features",
+    "constant_finite_factor": "zero_signal_keep_missing_flags",
+    "industry": "existing_static_industry_proxy; identical_for_NN_and_research_F17"
+  },
+  "universe": {
+    "listing_trading_days": 250,
+    "drop_smallest_float_cap": 0.3,
+    "exclude_st": true,
+    "unknown_st": "exclude; daily_BaoStock_preferred_else_backward_month_end_proxy",
+    "markets": [
+      "SH_A",
+      "SZ_A"
+    ],
+    "formation_limit_up": "exclude_using_board_rate_and_raw_preclose_proxy",
+    "security_master": "local_listing_dates; conservative_first_quote_fallback",
+    "float_cap": "raw_close_times_Sina_shares_else_BaoStock_volume_over_turnover_proxy"
+  },
+  "label": {
+    "horizon": 21,
+    "entry_offset": 1,
+    "end_offset": 22,
+    "formula": "adjusted_open[t+22]/adjusted_open[t+1]-1",
+    "missing": "NaN_with_reason; no_imputation; no_return_outlier_deletion",
+    "boundary": "label_end_time <= cutoff; validation_end < first_outer_formation",
+    "interior_missing": "allowed_only_with_observed_BaoStock_suspension",
+    "corporate_actions": "vendor_adjusted_price_research_proxy; NOT_verified_cash_share_settlement",
+    "price_precision": "raw_OHLC_scaled_by_same_day_vendor_adjusted_close_over_raw_close"
+  },
+  "calendar": {
+    "anchor": "2010-01-04",
+    "step": 21,
+    "phase": 0,
+    "source": "union_of_existing_market_trading_dates; BaoStock_overlap_audited",
+    "reset_at_year": false,
+    "reason": "run_final.py detailed main series uses phase 0; no phase search"
+  },
+  "network": {
+    "input": 34,
+    "hidden": [
+      32,
+      16
+    ],
+    "dropout": 0.1,
+    "activation": "ReLU",
+    "output": "unconstrained_return"
+  },
+  "training": {
+    "optimizer": "AdamW",
+    "max_epochs": 100,
+    "patience": 10,
+    "min_delta": 1e-06,
+    "batch_dates": 4,
+    "stock_chunk": 4096,
+    "epoch": "all_training_dates_once",
+    "shuffle_training_dates": true,
+    "loss": "Huber",
+    "delta": 1.0,
+    "label_scale": "max(date_equal_weighted_lower_median_abs_return,1e-4); no_centering; quantile_tolerance_1e-12",
+    "date_weight": "equal",
+    "within_date_weight": "equal_valid_labels",
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "lr_grid": [
+      0.0003,
+      0.001
+    ],
+    "weight_decay_grid": [
+      0.0001,
+      0.001,
+      0.01
+    ],
+    "selection": "mean_best_validation_Huber_over_3_seeds",
+    "tie": "lower_grid_index_exact_loss_tie; earlier_epoch_within_min_delta",
+    "final_fit": "each_seed_best_epoch; all_matured_labels_since_2013",
+    "prediction": "mean_3_predictions_in_return_units",
+    "max_nn_fit_tasks": 51,
+    "first_grid_year": 2021
+  },
+  "folds": [
+    {
+      "year": 2021,
+      "train_start": "2013-01-01",
+      "train_end": "2018-12-31",
+      "valid_start": "2019-01-01",
+      "valid_end": "2020-12-31",
+      "research_contaminated": true
+    },
+    {
+      "year": 2022,
+      "train_start": "2013-01-01",
+      "train_end": "2019-12-31",
+      "valid_start": "2020-01-01",
+      "valid_end": "2021-12-31",
+      "research_contaminated": true
+    },
+    {
+      "year": 2023,
+      "train_start": "2013-01-01",
+      "train_end": "2020-12-31",
+      "valid_start": "2021-01-01",
+      "valid_end": "2022-12-31",
+      "research_contaminated": true
+    },
+    {
+      "year": 2024,
+      "train_start": "2013-01-01",
+      "train_end": "2021-12-31",
+      "valid_start": "2022-01-01",
+      "valid_end": "2023-12-31",
+      "research_contaminated": true
+    },
+    {
+      "year": 2025,
+      "train_start": "2013-01-01",
+      "train_end": "2022-12-31",
+      "valid_start": "2023-01-01",
+      "valid_end": "2024-12-31",
+      "research_contaminated": true
+    },
+    {
+      "year": 2026,
+      "train_start": "2013-01-01",
+      "train_end": "2023-12-31",
+      "valid_start": "2024-01-01",
+      "valid_end": "2025-12-31",
+      "research_contaminated": true
+    }
+  ],
+  "ridge": {
+    "alphas": [
+      0.0001,
+      0.01,
+      1.0
+    ],
+    "selection": "same_date_equal_validation_Huber",
+    "objective": "date_equal_weighted_squared_error_plus_alpha_L2",
+    "intercept_penalized": false,
+    "first_fold_only": true,
+    "max_fit_tasks": 9
+  },
+  "portfolio": {
+    "n": 50,
+    "retention_rank": 80,
+    "minimum_candidates": 20,
+    "cap": 0.03,
+    "main": "softmax",
+    "temperature": 1.0,
+    "score_map": "selected_average_rank_scaled_to_[0,1]; all_tied_equal",
+    "ties": "symbol_ascending",
+    "cash": "unallocated_cap_lots_fees_constraints",
+    "nn_equal_diagnostic": true,
+    "ridge_readout": "same_softmax_as_NN",
+    "f17_readout": "skip_missing_mean_score_then_equal",
+    "buffer_state": "previous_selected_list; actual_holdings_remain_in_ledger"
+  },
+  "execution": {
+    "capital": 10000000.0,
+    "leverage": false,
+    "net_commission": 0.0002,
+    "min_commission": 5.0,
+    "commission_unit": "symbol_side_day_aggregated_fill",
+    "commission_includes": [
+      "broker_net",
+      "handling",
+      "regulatory"
+    ],
+    "separate": [
+      "stamp",
+      "transfer",
+      "slippage"
+    ],
+    "slippage": 0.001,
+    "participation": 0.05,
+    "capacity": "lagged_20_day_mean_amount; no_future_daily_volume",
+    "buy_lot": "main_ChiNext_100; STAR_min200_increment1",
+    "sells": "partial_main_100; odd_remainder_only_full_exit_within_capacity",
+    "stale_mark": "carry_last_verified_close_adjusted_for_actions; reject_after_60_sessions",
+    "trade_price": "unadjusted_open",
+    "annual_reset": false,
+    "fee_table_start": "2021-01-01",
+    "fee_table_scope": "actual_execution_period_2021_onward; no_pre2021_backtest"
+  },
+  "statistics": {
+    "periods": 252,
+    "rf_annual": 0.0,
+    "rf_source": "explicit_zero_assumption",
+    "sharpe": "mean_daily_excess/std_daily_excess_ddof1*sqrt252",
+    "hac_lags": 21,
+    "hac_small_sample_correction": false,
+    "paired_bootstrap": "circular_blocks",
+    "block": 21,
+    "replicates": 2000,
+    "seed": 42,
+    "interval": [
+      0.025,
+      0.975
+    ]
+  },
+  "acceptance": {
+    "net_CAGR_gt_F17": true,
+    "Sharpe_ge_F17": true,
+    "vol_ratio_max": 1.1,
+    "drawdown_worsening_max": 0.03,
+    "data_execution_pass_required": true,
+    "future_confirmation": "not_started; execution_and_data_acceptance_still_required",
+    "training_authorized_with_limitations": true
+  },
+  "training_data_contract": {
+    "version": "nn_v2.2_research",
+    "authorization": "Research training authorized with documented limitations.",
+    "execution_accepted": false,
+    "preprocessing": {
+      "all_missing_factor": "reject_date_and_report; retain_all_17_features",
+      "industry": "existing_static_industry_proxy; identical_for_NN_and_research_F17"
+    },
+    "universe": {
+      "security_master": "local_listing_dates; conservative_first_quote_fallback",
+      "unknown_st": "exclude; daily_BaoStock_preferred_else_backward_month_end_proxy",
+      "formation_limit_up": "exclude_using_board_rate_and_raw_preclose_proxy",
+      "float_cap": "raw_close_times_Sina_shares_else_BaoStock_volume_over_turnover_proxy"
+    },
+    "label": {
+      "corporate_actions": "vendor_adjusted_price_research_proxy; NOT_verified_cash_share_settlement",
+      "interior_missing": "allowed_only_with_observed_BaoStock_suspension",
+      "missing": "NaN_with_reason; no_imputation; no_return_outlier_deletion",
+      "price_precision": "raw_OHLC_scaled_by_same_day_vendor_adjusted_close_over_raw_close"
+    },
+    "calendar": {
+      "source": "union_of_existing_market_trading_dates; BaoStock_overlap_audited"
+    },
+    "acceptance": {
+      "training_authorized_with_limitations": true,
+      "data_execution_pass_required": true,
+      "future_confirmation": "not_started; execution_and_data_acceptance_still_required"
+    }
+  },
+  "data_manifest": {
+    "training_mode": "research_with_limitations",
+    "package_manifest": {
+      "version": "nn_v2.2_research",
+      "training_contract": {
+        "version": "nn_v2.2_research",
+        "authorization": "Research training authorized with documented limitations.",
+        "execution_accepted": false,
+        "preprocessing": {
+          "all_missing_factor": "reject_date_and_report; retain_all_17_features",
+          "industry": "existing_static_industry_proxy; identical_for_NN_and_research_F17"
+        },
+        "universe": {
+          "security_master": "local_listing_dates; conservative_first_quote_fallback",
+          "unknown_st": "exclude; daily_BaoStock_preferred_else_backward_month_end_proxy",
+          "formation_limit_up": "exclude_using_board_rate_and_raw_preclose_proxy",
+          "float_cap": "raw_close_times_Sina_shares_else_BaoStock_volume_over_turnover_proxy"
+        },
+        "label": {
+          "corporate_actions": "vendor_adjusted_price_research_proxy; NOT_verified_cash_share_settlement",
+          "interior_missing": "allowed_only_with_observed_BaoStock_suspension",
+          "missing": "NaN_with_reason; no_imputation; no_return_outlier_deletion",
+          "price_precision": "raw_OHLC_scaled_by_same_day_vendor_adjusted_close_over_raw_close"
+        },
+        "calendar": {
+          "source": "union_of_existing_market_trading_dates; BaoStock_overlap_audited"
+        },
+        "acceptance": {
+          "training_authorized_with_limitations": true,
+          "data_execution_pass_required": true,
+          "future_confirmation": "not_started; execution_and_data_acceptance_still_required"
+        }
+      },
+      "preparation_code": "0015699d53c268b64335aba03694046cc7a039504ad3a1ac04fdbf6aaca71650",
+      "files": {
+        "authorization.json": "33ed1fed4c3a68b2aec231a4261bb7eab15f9c13ee4cbea9fb76dc37d20a71cf",
+        "calendar.csv": "0cfb1423844f27c4f517d490bbe021fb598f42f7fdc88914e31017a498fcacc1",
+        "factors_clean.parquet": "074063c8e37fbdf3e5e439d56ad7c56c62de89cb4b10adf837ae20739a884aff",
+        "factors_raw.parquet": "7a94f330493d666d0dce6a80b53616e92ad6dbcc9796f265a9d5bc4152745dd1",
+        "label_coverage.csv": "befc066fd53daab23481e09eadfe65a2c48b8688c0737b9c76c240d65cd2e132",
+        "quality_report.json": "c6584b73b9151aaa9ccdec65b33ecb7d383457cffc6a6e167256e15965ec9cce",
+        "sample_quality.parquet": "08dbec4ab58d9cc4342019d0fb99eb8b0138b985fa8b99bf885be828ea891aad",
+        "samples.npz": "a290bcafcc16a1630225d7dce628f94009cfc38cd7a4ddcbafb7b79d9e810f24",
+        "security_coverage.csv": "8aa978dbbb3d768935b677863ad88279e3fc3bce6b614a7fc013c08fddb2a54e",
+        "skipped_dates.json": "68c25048617fec2cdaab20ff2da233c6d5dfd1b880e637f0b6f6cc500aafcc30",
+        "source_manifest.json": "5c412e3495c367707e0b5b08fbc775ce566f0fe58d36e0d3941a2e67b774737b"
+      }
+    },
+    "research_acceptance_sha256": "d3997fc12bf83c0b80b7dd29afcebc8b6bc293a8c27dda9c002fa858985b8129",
+    "execution_accepted": false
+  },
+  "code_hash": "0015699d53c268b64335aba03694046cc7a039504ad3a1ac04fdbf6aaca71650",
+  "spec_hash": "ead7f531a09fdaad2812490183e198b4d59c1983f84830ef324f789f9fefecb9"
+}

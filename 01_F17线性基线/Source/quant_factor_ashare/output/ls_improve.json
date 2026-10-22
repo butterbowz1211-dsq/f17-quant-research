@@ -1,0 +1,208 @@
+{
+  "results": {
+    "等权|原始|多头": {
+      "IS_sharpe_mean": 0.5896,
+      "IS_sharpe_sd": 0.0267,
+      "OOS_sharpe_mean": 0.8588,
+      "OOS_sharpe_sd": 0.0823,
+      "OOS_sharpe_min": 0.7598,
+      "OOS_sharpe_max": 1.0171,
+      "OOS_cagr_mean": 0.1793,
+      "OOS_maxdd_mean": -0.2625,
+      "OOS_calmar_mean": 0.683,
+      "ch4_oos": {
+        "alpha_a_pct": 12.86,
+        "t": 4.29,
+        "betas": {
+          "MKT": 0.878,
+          "SMB": -0.819,
+          "VMG": 0.042,
+          "PMO": 0.02
+        },
+        "r2": 0.913
+      },
+      "n_phases": 7
+    },
+    "等权|原始|多空": {
+      "IS_sharpe_mean": 1.5863,
+      "IS_sharpe_sd": 0.0897,
+      "OOS_sharpe_mean": 1.2008,
+      "OOS_sharpe_sd": 0.1196,
+      "OOS_sharpe_min": 1.0291,
+      "OOS_sharpe_max": 1.4161,
+      "OOS_cagr_mean": 0.1639,
+      "OOS_maxdd_mean": -0.1354,
+      "OOS_calmar_mean": 1.211,
+      "ch4_oos": {
+        "alpha_a_pct": 13.18,
+        "t": 4.05,
+        "betas": {
+          "MKT": -0.11,
+          "SMB": -0.141,
+          "VMG": 0.511,
+          "PMO": 0.039
+        },
+        "r2": 0.885
+      },
+      "n_phases": 7
+    },
+    "等权|中和EP+市值|多头": {
+      "IS_sharpe_mean": 0.5951,
+      "IS_sharpe_sd": 0.0264,
+      "OOS_sharpe_mean": 0.8515,
+      "OOS_sharpe_sd": 0.0633,
+      "OOS_sharpe_min": 0.7479,
+      "OOS_sharpe_max": 0.9269,
+      "OOS_cagr_mean": 0.1828,
+      "OOS_maxdd_mean": -0.259,
+      "OOS_calmar_mean": 0.706,
+      "ch4_oos": {
+        "alpha_a_pct": 14.06,
+        "t": 7.42,
+        "betas": {
+          "MKT": 0.83,
+          "SMB": -0.877,
+          "VMG": -0.059,
+          "PMO": 0.003
+        },
+        "r2": 0.914
+      },
+      "n_phases": 7
+    },
+    "等权|中和EP+市值|多空": {
+      "IS_sharpe_mean": 1.6144,
+      "IS_sharpe_sd": 0.0506,
+      "OOS_sharpe_mean": 1.3583,
+      "OOS_sharpe_sd": 0.1468,
+      "OOS_sharpe_min": 1.1238,
+      "OOS_sharpe_max": 1.6326,
+      "OOS_cagr_mean": 0.172,
+      "OOS_maxdd_mean": -0.1078,
+      "OOS_calmar_mean": 1.596,
+      "ch4_oos": {
+        "alpha_a_pct": 16.36,
+        "t": 5.86,
+        "betas": {
+          "MKT": -0.184,
+          "SMB": -0.083,
+          "VMG": 0.388,
+          "PMO": 0.067
+        },
+        "r2": 0.859
+      },
+      "n_phases": 7
+    },
+    "CH4alpha加权|原始|多头": {
+      "IS_sharpe_mean": 0.6682,
+      "IS_sharpe_sd": 0.0208,
+      "OOS_sharpe_mean": 0.7085,
+      "OOS_sharpe_sd": 0.0389,
+      "OOS_sharpe_min": 0.6439,
+      "OOS_sharpe_max": 0.7719,
+      "OOS_cagr_mean": 0.1782,
+      "OOS_maxdd_mean": -0.3466,
+      "OOS_calmar_mean": 0.514,
+      "ch4_oos": {
+        "alpha_a_pct": 10.17,
+        "t": 2.77,
+        "betas": {
+          "MKT": 0.974,
+          "SMB": -1.055,
+          "VMG": -0.109,
+          "PMO": 0.089
+        },
+        "r2": 0.934
+      },
+      "n_phases": 7
+    },
+    "CH4alpha加权|原始|多空": {
+      "IS_sharpe_mean": 1.8131,
+      "IS_sharpe_sd": 0.0944,
+      "OOS_sharpe_mean": 1.3267,
+      "OOS_sharpe_sd": 0.1695,
+      "OOS_sharpe_min": 1.0537,
+      "OOS_sharpe_max": 1.4823,
+      "OOS_cagr_mean": 0.1847,
+      "OOS_maxdd_mean": -0.1266,
+      "OOS_calmar_mean": 1.46,
+      "ch4_oos": {
+        "alpha_a_pct": 13.36,
+        "t": 5.08,
+        "betas": {
+          "MKT": 0.099,
+          "SMB": -0.353,
+          "VMG": 0.685,
+          "PMO": 0.075
+        },
+        "r2": 0.907
+      },
+      "n_phases": 7
+    },
+    "CH4alpha加权|中和EP+市值|多头": {
+      "IS_sharpe_mean": 0.652,
+      "IS_sharpe_sd": 0.0541,
+      "OOS_sharpe_mean": 0.7541,
+      "OOS_sharpe_sd": 0.0709,
+      "OOS_sharpe_min": 0.647,
+      "OOS_sharpe_max": 0.841,
+      "OOS_cagr_mean": 0.1986,
+      "OOS_maxdd_mean": -0.358,
+      "OOS_calmar_mean": 0.555,
+      "ch4_oos": {
+        "alpha_a_pct": 15.4,
+        "t": 5.6,
+        "betas": {
+          "MKT": 0.868,
+          "SMB": -1.034,
+          "VMG": -0.352,
+          "PMO": 0.257
+        },
+        "r2": 0.937
+      },
+      "n_phases": 7
+    },
+    "CH4alpha加权|中和EP+市值|多空": {
+      "IS_sharpe_mean": 1.8113,
+      "IS_sharpe_sd": 0.1263,
+      "OOS_sharpe_mean": 1.4718,
+      "OOS_sharpe_sd": 0.2247,
+      "OOS_sharpe_min": 1.0249,
+      "OOS_sharpe_max": 1.7106,
+      "OOS_cagr_mean": 0.1946,
+      "OOS_maxdd_mean": -0.1248,
+      "OOS_calmar_mean": 1.559,
+      "ch4_oos": {
+        "alpha_a_pct": 17.43,
+        "t": 5.95,
+        "betas": {
+          "MKT": -0.032,
+          "SMB": -0.314,
+          "VMG": 0.472,
+          "PMO": 0.224
+        },
+        "r2": 0.872
+      },
+      "n_phases": 7
+    }
+  },
+  "alpha_weights": {
+    "TURN": 0.1398,
+    "MAX5": 0.1009,
+    "INTRADAY": 0.1213,
+    "ILLIQ": 0.0888,
+    "COMMOVE": 0.086,
+    "TURN_SHOCK": 0.0629,
+    "REV_1W": 0.0635,
+    "ISKEW": 0.0377,
+    "IVOL": 0.0874,
+    "OVERNIGHT": 0.0514,
+    "LEAD_LAG": 0.0269,
+    "CO_SKEW": 0.0386,
+    "BETA": 0.0205,
+    "REV_LT": 0.0371,
+    "SIZE": 0.0335,
+    "HIGH52": 0.0,
+    "RES_MOM": 0.0039
+  },
+  "is_selected": "CH4alpha加权|原始|多空"
+}

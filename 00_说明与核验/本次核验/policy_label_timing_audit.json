@@ -1,0 +1,48 @@
+{
+  "source": "qlp/dataset.py:153-184",
+  "toy_open": [
+    100.0,
+    200.0,
+    300.0,
+    400.0,
+    500.0
+  ],
+  "start": 1,
+  "k": 2,
+  "implemented_return": 1.0,
+  "documented_t_plus_1_return": 0.6666666666666667,
+  "actual_formula": "open[t+21]/open[t]-1 when all endpoints exist",
+  "intended_formula": "open[t+22]/open[t+1]-1",
+  "training_boundary_crossings": [
+    {
+      "train_end_year": 2018,
+      "formation": "2018-12-18",
+      "actual_label_start": "2018-12-18",
+      "actual_label_end": "2019-01-18"
+    },
+    {
+      "train_end_year": 2019,
+      "formation": "2019-12-31",
+      "actual_label_start": "2019-12-31",
+      "actual_label_end": "2020-02-07"
+    },
+    {
+      "train_end_year": 2020,
+      "formation": "2020-12-15",
+      "actual_label_start": "2020-12-15",
+      "actual_label_end": "2021-01-14"
+    },
+    {
+      "train_end_year": 2021,
+      "formation": "2021-12-28",
+      "actual_label_start": "2021-12-28",
+      "actual_label_end": "2022-01-27"
+    },
+    {
+      "train_end_year": 2022,
+      "formation": "2022-12-12",
+      "actual_label_start": "2022-12-12",
+      "actual_label_end": "2023-01-11"
+    }
+  ]
+}

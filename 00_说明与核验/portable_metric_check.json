@@ -1,0 +1,519 @@
+{
+  "expected_series": 73,
+  "verified_series": 73,
+  "failed": 0,
+  "errors": [],
+  "results": [
+    {
+      "model": "baseline_f17",
+      "relative_path": "03_原始机器学习组合政策/Source/quant_factor_ashare/ml_policy/artifacts/baseline_f17_daily.csv",
+      "n": 3336,
+      "passed": true,
+      "max_abs_difference": 1.1213252548714081e-14
+    },
+    {
+      "model": "beq_fold0",
+      "relative_path": "03_原始机器学习组合政策/Source/quant_factor_ashare/ml_policy/artifacts/beq_fold0_daily.csv",
+      "n": 243,
+      "passed": true,
+      "max_abs_difference": 6.328271240363392e-14
+    },
+    {
+      "model": "beq_fold1",
+      "relative_path": "03_原始机器学习组合政策/Source/quant_factor_ashare/ml_policy/artifacts/beq_fold1_daily.csv",
+      "n": 242,
+      "passed": true,
+      "max_abs_difference": 7.216449660063518e-15
+    },
+    {
+      "model": "beqc0_fold0",
+      "relative_path": "03_原始机器学习组合政策/Source/quant_factor_ashare/ml_policy/artifacts/beqc0_fold0_daily.csv",
+      "n": 243,
+      "passed": true,
+      "max_abs_difference": 8.337774914934926e-14
+    },
+    {
+      "model": "beqc1_fold1",
+      "relative_path": "03_原始机器学习组合政策/Source/quant_factor_ashare/ml_policy/artifacts/beqc1_fold1_daily.csv",
+      "n": 242,
+      "passed": true,
+      "max_abs_difference": 3.2862601528904634e-14
+    },
+    {
+      "model": "bf17_fold0",
+      "relative_path": "03_原始机器学习组合政策/Source/quant_factor_ashare/ml_policy/artifacts/bf17_fold0_daily.csv",
+      "n": 243,
+      "passed": true,
+      "max_abs_difference": 1.092459456231154e-13
+    },
+    {
+      "model": "bf17_fold1",
+      "relative_path": "03_原始机器学习组合政策/Source/quant_factor_ashare/ml_policy/artifacts/bf17_fold1_daily.csv",
+      "n": 242,
+      "passed": true,
+      "max_abs_difference": 1.4099832412739488e-14
+    },
+    {
+      "model": "engine_daily_band05_fold0__ew_all",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/engine_daily_band05_fold0/ew_all.csv",
+      "n": 243,
+      "passed": true,
+      "max_abs_difference": 6.328271240363392e-14
+    },
+    {
+      "model": "engine_daily_band05_fold0__ew_top500",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/engine_daily_band05_fold0/ew_top500.csv",
+      "n": 243,
+      "passed": true,
+      "max_abs_difference": 8.926193117986259e-14
+    },
+    {
+      "model": "engine_daily_band05_fold0__policy_softmax_all",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/engine_daily_band05_fold0/policy_softmax_all.csv",
+      "n": 243,
+      "passed": true,
+      "max_abs_difference": 3.530509218307998e-14
+    },
+    {
+      "model": "engine_daily_band05_fold1__ew_all",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/engine_daily_band05_fold1/ew_all.csv",
+      "n": 242,
+      "passed": true,
+      "max_abs_difference": 7.216449660063518e-15
+    },
+    {
+      "model": "engine_daily_band05_fold1__ew_top500",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/engine_daily_band05_fold1/ew_top500.csv",
+      "n": 242,
+      "passed": true,
+      "max_abs_difference": 1.0436096431476471e-14
+    },
+    {
+      "model": "engine_daily_band05_fold1__policy_softmax_all",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/engine_daily_band05_fold1/policy_softmax_all.csv",
+      "n": 242,
+      "passed": true,
+      "max_abs_difference": 1.2989609388114332e-14
+    },
+    {
+      "model": "engine_daily_fold0__ew_all",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/engine_daily_fold0/ew_all.csv",
+      "n": 243,
+      "passed": true,
+      "max_abs_difference": 6.328271240363392e-14
+    },
+    {
+      "model": "engine_daily_fold0__ew_top100",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/engine_daily_fold0/ew_top100.csv",
+      "n": 243,
+      "passed": true,
+      "max_abs_difference": 4.285460875053104e-14
+    },
+    {
+      "model": "engine_daily_fold0__ew_top200",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/engine_daily_fold0/ew_top200.csv",
+      "n": 243,
+      "passed": true,
+      "max_abs_difference": 1.3278267374516872e-13
+    },
+    {
+      "model": "engine_daily_fold0__ew_top30",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/engine_daily_fold0/ew_top30.csv",
+      "n": 243,
+      "passed": true,
+      "max_abs_difference": 5.062616992290714e-14
+    },
+    {
+      "model": "engine_daily_fold0__ew_top300",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/engine_daily_fold0/ew_top300.csv",
+      "n": 243,
+      "passed": true,
+      "max_abs_difference": 1.2523315717771766e-13
+    },
+    {
+      "model": "engine_daily_fold0__ew_top500",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/engine_daily_fold0/ew_top500.csv",
+      "n": 243,
+      "passed": true,
+      "max_abs_difference": 8.926193117986259e-14
+    },
+    {
+      "model": "engine_daily_fold0__policy_softmax_all",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/engine_daily_fold0/policy_softmax_all.csv",
+      "n": 243,
+      "passed": true,
+      "max_abs_difference": 4.773959005888173e-14
+    },
+    {
+      "model": "engine_daily_fold0__softmax_all_T1",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/engine_daily_fold0/softmax_all_T1.csv",
+      "n": 243,
+      "passed": true,
+      "max_abs_difference": 7.815970093361102e-14
+    },
+    {
+      "model": "engine_daily_fold0__softmax_top500_T0.1",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/engine_daily_fold0/softmax_top500_T0.1.csv",
+      "n": 243,
+      "passed": true,
+      "max_abs_difference": 8.459899447643693e-14
+    },
+    {
+      "model": "engine_daily_fold0__softmax_top500_T0.3",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/engine_daily_fold0/softmax_top500_T0.3.csv",
+      "n": 243,
+      "passed": true,
+      "max_abs_difference": 6.128431095930864e-14
+    },
+    {
+      "model": "engine_daily_fold0__softmax_top500_T0.5",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/engine_daily_fold0/softmax_top500_T0.5.csv",
+      "n": 243,
+      "passed": true,
+      "max_abs_difference": 7.127631818093505e-14
+    },
+    {
+      "model": "engine_daily_fold0__softmax_top500_T1",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/engine_daily_fold0/softmax_top500_T1.csv",
+      "n": 243,
+      "passed": true,
+      "max_abs_difference": 5.417888360170764e-14
+    },
+    {
+      "model": "engine_daily_fold0__zpos_all",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/engine_daily_fold0/zpos_all.csv",
+      "n": 243,
+      "passed": true,
+      "max_abs_difference": 8.393286066166183e-14
+    },
+    {
+      "model": "engine_daily_fold0__zpos_top300",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/engine_daily_fold0/zpos_top300.csv",
+      "n": 243,
+      "passed": true,
+      "max_abs_difference": 7.238654120556021e-14
+    },
+    {
+      "model": "engine_daily_fold1__ew_all",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/engine_daily_fold1/ew_all.csv",
+      "n": 242,
+      "passed": true,
+      "max_abs_difference": 7.216449660063518e-15
+    },
+    {
+      "model": "engine_daily_fold1__ew_top100",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/engine_daily_fold1/ew_top100.csv",
+      "n": 242,
+      "passed": true,
+      "max_abs_difference": 6.661338147750939e-15
+    },
+    {
+      "model": "engine_daily_fold1__ew_top200",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/engine_daily_fold1/ew_top200.csv",
+      "n": 242,
+      "passed": true,
+      "max_abs_difference": 8.43769498715119e-15
+    },
+    {
+      "model": "engine_daily_fold1__ew_top30",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/engine_daily_fold1/ew_top30.csv",
+      "n": 242,
+      "passed": true,
+      "max_abs_difference": 6.8833827526759706e-15
+    },
+    {
+      "model": "engine_daily_fold1__ew_top300",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/engine_daily_fold1/ew_top300.csv",
+      "n": 242,
+      "passed": true,
+      "max_abs_difference": 1.5210055437364645e-14
+    },
+    {
+      "model": "engine_daily_fold1__ew_top500",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/engine_daily_fold1/ew_top500.csv",
+      "n": 242,
+      "passed": true,
+      "max_abs_difference": 1.5210055437364645e-14
+    },
+    {
+      "model": "engine_daily_fold1__policy_softmax_all",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/engine_daily_fold1/policy_softmax_all.csv",
+      "n": 242,
+      "passed": true,
+      "max_abs_difference": 9.2148511043888e-15
+    },
+    {
+      "model": "engine_daily_fold1__softmax_all_T1",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/engine_daily_fold1/softmax_all_T1.csv",
+      "n": 242,
+      "passed": true,
+      "max_abs_difference": 1.099120794378905e-14
+    },
+    {
+      "model": "engine_daily_fold1__zpos_all",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/engine_daily_fold1/zpos_all.csv",
+      "n": 242,
+      "passed": true,
+      "max_abs_difference": 1.0325074129013956e-14
+    },
+    {
+      "model": "engine_daily_fold1__zpos_top300",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/engine_daily_fold1/zpos_top300.csv",
+      "n": 242,
+      "passed": true,
+      "max_abs_difference": 1.1546319456101628e-14
+    },
+    {
+      "model": "final_fold0_k30",
+      "relative_path": "03_原始机器学习组合政策/Source/quant_factor_ashare/ml_policy/artifacts/final_fold0_k30_daily.csv",
+      "n": 243,
+      "passed": true,
+      "max_abs_difference": 9.903189379656396e-14
+    },
+    {
+      "model": "final_fold0_kall",
+      "relative_path": "03_原始机器学习组合政策/Source/quant_factor_ashare/ml_policy/artifacts/final_fold0_kall_daily.csv",
+      "n": 243,
+      "passed": true,
+      "max_abs_difference": 3.555489236362064e-14
+    },
+    {
+      "model": "p1_fold0",
+      "relative_path": "03_原始机器学习组合政策/Source/quant_factor_ashare/ml_policy/artifacts/p1_fold0_daily.csv",
+      "n": 243,
+      "passed": true,
+      "max_abs_difference": 1.5876189252139739e-13
+    },
+    {
+      "model": "p1_fold1",
+      "relative_path": "03_原始机器学习组合政策/Source/quant_factor_ashare/ml_policy/artifacts/p1_fold1_daily.csv",
+      "n": 242,
+      "passed": true,
+      "max_abs_difference": 1.27675647831893e-14
+    },
+    {
+      "model": "policy_holdout_2013_2020_ew_all",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/policy_holdout_2013_2020_ew_all_daily.csv",
+      "n": 906,
+      "passed": true,
+      "max_abs_difference": 1.9081958235744878e-14
+    },
+    {
+      "model": "policy_holdout_2013_2020_ew_top10pct",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/policy_holdout_2013_2020_ew_top10pct_daily.csv",
+      "n": 906,
+      "passed": true,
+      "max_abs_difference": 1.3364309658925322e-14
+    },
+    {
+      "model": "policy_holdout_2013_2020_ew_top500",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/policy_holdout_2013_2020_ew_top500_daily.csv",
+      "n": 906,
+      "passed": true,
+      "max_abs_difference": 1.9907686610309838e-14
+    },
+    {
+      "model": "policy_holdout_2013_2020_fold0_kall",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/policy_holdout_2013_2020_fold0_kall_daily.csv",
+      "n": 906,
+      "passed": true,
+      "max_abs_difference": 1.8832158055204218e-14
+    },
+    {
+      "model": "policy_holdout_2013_2020_policy_softmax_all",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/policy_holdout_2013_2020_policy_softmax_all_daily.csv",
+      "n": 906,
+      "passed": true,
+      "max_abs_difference": 1.5471998682237142e-14
+    },
+    {
+      "model": "policy_holdout_2013_2020_vw_all",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/policy_holdout_2013_2020_vw_all_daily.csv",
+      "n": 906,
+      "passed": true,
+      "max_abs_difference": 5.090372567906343e-14
+    },
+    {
+      "model": "policy_holdout_2013_2020_vw_top10pct",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/policy_holdout_2013_2020_vw_top10pct_daily.csv",
+      "n": 906,
+      "passed": true,
+      "max_abs_difference": 2.0497492592141953e-14
+    },
+    {
+      "model": "policy_v2_chrono_fold0_kall",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/policy_v2_chrono_fold0_kall_daily.csv",
+      "n": 243,
+      "passed": true,
+      "max_abs_difference": 1.0302869668521453e-13
+    },
+    {
+      "model": "policy_v2_listnet_a001_fold0_k500",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/policy_v2_listnet_a001_fold0_k500_daily.csv",
+      "n": 243,
+      "passed": true,
+      "max_abs_difference": 6.727951529228449e-14
+    },
+    {
+      "model": "policy_v2_listnet_a001_fold0_kall",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/policy_v2_listnet_a001_fold0_kall_daily.csv",
+      "n": 243,
+      "passed": true,
+      "max_abs_difference": 7.682743330406083e-14
+    },
+    {
+      "model": "policy_v2_listnet_execfix_fold0_k500",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/policy_v2_listnet_execfix_fold0_k500_daily.csv",
+      "n": 243,
+      "passed": true,
+      "max_abs_difference": 3.3806291099836017e-14
+    },
+    {
+      "model": "policy_v2_listnet_execfix_fold0_kall",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/policy_v2_listnet_execfix_fold0_kall_daily.csv",
+      "n": 243,
+      "passed": true,
+      "max_abs_difference": 4.3853809472693683e-14
+    },
+    {
+      "model": "policy_v2_listnet_fold0_k500",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/policy_v2_listnet_fold0_k500_daily.csv",
+      "n": 243,
+      "passed": true,
+      "max_abs_difference": 5.459521723594207e-14
+    },
+    {
+      "model": "policy_v2_topg500_fold0_k500",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/policy_v2_topg500_fold0_k500_daily.csv",
+      "n": 243,
+      "passed": true,
+      "max_abs_difference": 5.262457136723242e-14
+    },
+    {
+      "model": "policy_v3_chrono_anneal_last24_fold0_k500",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/policy_v3_chrono_anneal_last24_fold0_k500_daily.csv",
+      "n": 243,
+      "passed": true,
+      "max_abs_difference": 5.1958437552457326e-14
+    },
+    {
+      "model": "policy_v3_chrono_anneal_last24_fold0_kall",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/policy_v3_chrono_anneal_last24_fold0_kall_daily.csv",
+      "n": 243,
+      "passed": true,
+      "max_abs_difference": 8.459899447643693e-14
+    },
+    {
+      "model": "policy_v3_chrono_ic_anneal_fold0_k500",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/policy_v3_chrono_ic_anneal_fold0_k500_daily.csv",
+      "n": 243,
+      "passed": true,
+      "max_abs_difference": 9.325873406851315e-14
+    },
+    {
+      "model": "policy_v3_chrono_ic_anneal_fold0_kall",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/policy_v3_chrono_ic_anneal_fold0_kall_daily.csv",
+      "n": 243,
+      "passed": true,
+      "max_abs_difference": 7.460698725481052e-14
+    },
+    {
+      "model": "policy_v3_chrono_ic_fixedT06_fold0_k500",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/policy_v3_chrono_ic_fixedT06_fold0_k500_daily.csv",
+      "n": 243,
+      "passed": true,
+      "max_abs_difference": 9.903189379656396e-14
+    },
+    {
+      "model": "policy_v3_chrono_ic_fixedT06_fold0_kall",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/policy_v3_chrono_ic_fixedT06_fold0_kall_daily.csv",
+      "n": 243,
+      "passed": true,
+      "max_abs_difference": 9.325873406851315e-14
+    },
+    {
+      "model": "policy_v3_chrono_score_fixedT06_cost0_fold0_k500",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/policy_v3_chrono_score_fixedT06_cost0_fold0_k500_daily.csv",
+      "n": 243,
+      "passed": true,
+      "max_abs_difference": 9.459100169806334e-14
+    },
+    {
+      "model": "policy_v3_chrono_score_fixedT06_cost0_fold0_kall",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/policy_v3_chrono_score_fixedT06_cost0_fold0_kall_daily.csv",
+      "n": 243,
+      "passed": true,
+      "max_abs_difference": 9.681144774731365e-14
+    },
+    {
+      "model": "policy_v3_chrono_score_fixedT06_fold0_k500",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/policy_v3_chrono_score_fixedT06_fold0_k500_daily.csv",
+      "n": 243,
+      "passed": true,
+      "max_abs_difference": 1.4654943925052066e-13
+    },
+    {
+      "model": "policy_v3_chrono_score_fixedT06_fold0_kall",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/policy_v3_chrono_score_fixedT06_fold0_kall_daily.csv",
+      "n": 243,
+      "passed": true,
+      "max_abs_difference": 7.016609515630989e-14
+    },
+    {
+      "model": "policy_v3_shuffle_score_fixedT06_fold0_k500",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/policy_v3_shuffle_score_fixedT06_fold0_k500_daily.csv",
+      "n": 243,
+      "passed": true,
+      "max_abs_difference": 9.037215420448774e-14
+    },
+    {
+      "model": "policy_v3_shuffle_score_fixedT06_fold0_kall",
+      "relative_path": "04_文献改进机器学习/policy_v2_v3/Source/quant_factor_ashare/ml_policy/artifacts/policy_v3_shuffle_score_fixedT06_fold0_kall_daily.csv",
+      "n": 243,
+      "passed": true,
+      "max_abs_difference": 4.973799150320701e-14
+    },
+    {
+      "model": "tk30_fold0",
+      "relative_path": "03_原始机器学习组合政策/Source/quant_factor_ashare/ml_policy/artifacts/tk30_fold0_daily.csv",
+      "n": 243,
+      "passed": true,
+      "max_abs_difference": 1.0702549957386509e-13
+    },
+    {
+      "model": "tk30_fold1",
+      "relative_path": "03_原始机器学习组合政策/Source/quant_factor_ashare/ml_policy/artifacts/tk30_fold1_daily.csv",
+      "n": 242,
+      "passed": true,
+      "max_abs_difference": 2.5868196473766147e-14
+    },
+    {
+      "model": "F17_daily_gross",
+      "relative_path": "04_文献改进机器学习/F17收益预测NN/Review/quant_factor_ashare_review/nn_v2/analysis/research_v1/gross_portfolio_v1/F17_daily_gross.csv",
+      "n": 1391,
+      "passed": true,
+      "max_abs_difference": 3.4861002973229915e-14
+    },
+    {
+      "model": "NN_equal_daily_gross",
+      "relative_path": "04_文献改进机器学习/F17收益预测NN/Review/quant_factor_ashare_review/nn_v2/analysis/research_v1/gross_portfolio_v1/NN_equal_daily_gross.csv",
+      "n": 1391,
+      "passed": true,
+      "max_abs_difference": 1.9206858326015208e-14
+    },
+    {
+      "model": "NN_softmax_daily_gross",
+      "relative_path": "04_文献改进机器学习/F17收益预测NN/Review/quant_factor_ashare_review/nn_v2/analysis/research_v1/gross_portfolio_v1/NN_softmax_daily_gross.csv",
+      "n": 1391,
+      "passed": true,
+      "max_abs_difference": 2.0872192862952943e-14
+    },
+    {
+      "model": "Ridge_daily_gross",
+      "relative_path": "04_文献改进机器学习/F17收益预测NN/Review/quant_factor_ashare_review/nn_v2/analysis/research_v1/gross_portfolio_v1/Ridge_daily_gross.csv",
+      "n": 1391,
+      "passed": true,
+      "max_abs_difference": 2.2315482794965646e-14
+    }
+  ]
+}

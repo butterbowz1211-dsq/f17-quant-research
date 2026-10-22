@@ -1,0 +1,107 @@
+[
+  {
+    "epoch": 1,
+    "train_huber": 1.011876918407413,
+    "validation_huber": 1.0132101692936637
+  },
+  {
+    "epoch": 2,
+    "train_huber": 1.0099512352445101,
+    "validation_huber": 1.01253381236033
+  },
+  {
+    "epoch": 3,
+    "train_huber": 1.0093277329066699,
+    "validation_huber": 1.011980106884783
+  },
+  {
+    "epoch": 4,
+    "train_huber": 1.0102374527653464,
+    "validation_huber": 1.0129669200290332
+  },
+  {
+    "epoch": 5,
+    "train_huber": 1.007710095463255,
+    "validation_huber": 1.0125342390754006
+  },
+  {
+    "epoch": 6,
+    "train_huber": 1.0081118287257733,
+    "validation_huber": 1.0115275911309503
+  },
+  {
+    "epoch": 7,
+    "train_huber": 1.0068974560621597,
+    "validation_huber": 1.0116143971681595
+  },
+  {
+    "epoch": 8,
+    "train_huber": 1.0067581281245228,
+    "validation_huber": 1.012220328504389
+  },
+  {
+    "epoch": 9,
+    "train_huber": 1.006549757653276,
+    "validation_huber": 1.0115863938223233
+  },
+  {
+    "epoch": 10,
+    "train_huber": 1.0063486815463016,
+    "validation_huber": 1.0117372653701089
+  },
+  {
+    "epoch": 11,
+    "train_huber": 1.0073120909253628,
+    "validation_huber": 1.0115168528123335
+  },
+  {
+    "epoch": 12,
+    "train_huber": 1.0063683498021232,
+    "validation_huber": 1.0119006864049218
+  },
+  {
+    "epoch": 13,
+    "train_huber": 1.005517537325686,
+    "validation_huber": 1.012488622557033
+  },
+  {
+    "epoch": 14,
+    "train_huber": 1.0051615012240072,
+    "validation_huber": 1.012341775677421
+  },
+  {
+    "epoch": 15,
+    "train_huber": 1.004861352259935,
+    "validation_huber": 1.011740286241878
+  },
+  {
+    "epoch": 16,
+    "train_huber": 1.0057004139836656,
+    "validation_huber": 1.0123239918188616
+  },
+  {
+    "epoch": 17,
+    "train_huber": 1.0050340523224466,
+    "validation_huber": 1.012174814939499
+  },
+  {
+    "epoch": 18,
+    "train_huber": 1.004850701091656,
+    "validation_huber": 1.0120080628178336
+  },
+  {
+    "epoch": 19,
+    "train_huber": 1.0050050697461117,
+    "validation_huber": 1.0116855326023968
+  },
+  {
+    "epoch": 20,
+    "train_huber": 1.0046090467968105,
+    "validation_huber": 1.0122959505427966
+  },
+  {
+    "epoch": 21,
+    "train_huber": 1.0054740010571468,
+    "validation_huber": 1.0118172886696728
+  }
+]

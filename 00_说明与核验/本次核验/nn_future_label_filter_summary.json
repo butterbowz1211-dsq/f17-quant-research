@@ -1,0 +1,50 @@
+[
+  {
+    "version": "v4",
+    "model": "F17",
+    "dates": 58,
+    "dates_affected": 48,
+    "selections_missing": 119,
+    "substituted_names": 119
+  },
+  {
+    "version": "v4",
+    "model": "NN",
+    "dates": 58,
+    "dates_affected": 7,
+    "selections_missing": 8,
+    "substituted_names": 8
+  },
+  {
+    "version": "v4",
+    "model": "Ridge",
+    "dates": 58,
+    "dates_affected": 7,
+    "selections_missing": 8,
+    "substituted_names": 8
+  },
+  {
+    "version": "v5",
+    "model": "F17",
+    "dates": 58,
+    "dates_affected": 48,
+    "selections_missing": 119,
+    "substituted_names": 119
+  },
+  {
+    "version": "v5",
+    "model": "NN",
+    "dates": 58,
+    "dates_affected": 7,
+    "selections_missing": 9,
+    "substituted_names": 9
+  },
+  {
+    "version": "v5",
+    "model": "Ridge",
+    "dates": 58,
+    "dates_affected": 6,
+    "selections_missing": 7,
+    "substituted_names": 7
+  }
+]

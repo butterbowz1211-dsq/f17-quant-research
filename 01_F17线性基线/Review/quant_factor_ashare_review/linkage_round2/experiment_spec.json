@@ -1,0 +1,46 @@
+{
+  "created": "2026-10-10",
+  "groups": {
+    "liquidity": [
+      "TURN",
+      "ILLIQ",
+      "TURN_SHOCK"
+    ],
+    "tail_risk": [
+      "MAX5",
+      "IVOL",
+      "ISKEW"
+    ],
+    "short_horizon": [
+      "REV_1W",
+      "INTRADAY",
+      "OVERNIGHT"
+    ],
+    "linkage": [
+      "COMMOVE"
+    ]
+  },
+  "candidates": [
+    "F17",
+    "F10_equal",
+    "group_equal",
+    "group_ridge"
+  ],
+  "removed": [
+    "CO_SKEW",
+    "BETA",
+    "REV_LT",
+    "SIZE",
+    "HIGH52",
+    "RES_MOM",
+    "LEAD_LAG"
+  ],
+  "ridge": 1.0,
+  "training_years": 5,
+  "refit": "annual, labels exited strictly before first prediction date",
+  "sample_dates": "each 21st trading date from panel origin; matched complete-factor IC sample",
+  "minimum_training_dates": 36,
+  "evaluation_start": "2015-01-01",
+  "status": "historically informed hypothesis; 2023+ already reused; NOT preregistration or new OOS",
+  "new_external_linkage_factors": "not included: historical relationship datasets missing"
+}
